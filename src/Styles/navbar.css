@@ -1,8 +1,14 @@
-.navbar{
-    background: transparent;
-    background-color: #282727;
+/* Navbar CSS */
+.fb-navbar {
+  background: rgba(10, 37, 24, 0.88) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-bottom: 1px solid rgba(255,255,255,0.06) !important;
+  box-shadow: none !important;
+  transition: background 300ms ease-out, box-shadow 300ms ease-out !important;
 }
 
-.navbar.active{
-    background-color: #282727;
+.fb-navbar-scrolled {
+  background: rgba(26, 71, 49, 0.97) !important;
+  box-shadow: 0 4px 12px rgba(13,35,24,0.18) !important;
 }

@@ -1,167 +1,185 @@
 /* eslint-disable no-unused-vars */
-import React, { useState, useEffect } from "react";
-import Card from "@mui/material/Card";
-import CardMedia from "@mui/material/CardMedia";
-import CardActions from "@mui/material/CardActions";
-import { Box, CardHeader, Container, Button } from "@mui/material";
+import React, { useState, useEffect, useCallback } from "react";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
 import DeleteIcon from "@mui/icons-material/Delete";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import Nothing from "./nothing";
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import "../Styles/addCart.css";
 import Swal from "sweetalert2";
-import Navbar from "./navbar";
 import PropTypes from 'prop-types';
+import '../Styles/web.css';
 
 const AddCart = ({ cart, setCart, handleChange }) => {
-  const [price, setPrice] = useState(1);
-
-  const [stock, setStock] = useState(1);
-
-  const stockReducer = () => {
-    if(stock  <  1){
-      setStock(1);
-    }
-  }
-
-
+  // FIX: initialize price as 0 (not 1) so empty cart correctly shows Nothing
+  const [price, setPrice] = useState(0);
 
   const handleRemove = (id) => {
     Swal.fire({
-      toast:true,
+      toast: true,
       icon: "info",
-      title: "Successfully Removed",
-      timer: "4000",
-      text: "One Item has been removed from your cart",
+      title: "Item removed",
+      timer: 3000,
+      showConfirmButton: false,
+      position: 'top-end',
+      text: "One item has been removed from your cart",
     });
-
     const arr = cart.filter((item) => item.id !== id);
     setCart(arr);
-    handlePrice();
   };
 
-  const handlePrice = () => {
+  // FIX: stable callback, recalculates from current cart (no stale closure issue)
+  const handlePrice = useCallback(() => {
     let ans = 0;
-    cart.map((item) => (ans += item.amount * item.price));
+    cart.forEach((item) => { ans += item.amount * item.price; });
     setPrice(ans);
-  };
+  }, [cart]);
 
+  // FIX: proper dependency array — only runs when cart changes
   useEffect(() => {
     handlePrice();
-    stockReducer();
-    console.log(cart);
-  });
+  }, [handlePrice]);
 
   const eventTrap = () => {
     localStorage.setItem('billAmount', price);
+  };
+
+  if (cart.length === 0) {
+    return <Nothing />;
   }
 
-
   return (
-    <>
-    <Navbar />
-      {price === 0 ? (
-        <Nothing />
-      ) : (
-        <div className="baseBox">
-          <Box style={{ margin: 70 }}>
-            <Typography variant="h2">Your Cart</Typography>
-            <Container
-              style={{
-                display: "grid",
-                gridTemplateColumns: "auto auto auto",
-                columnGap: "80px",
-                rowGap: "20px",
-              }}
-            >
-              {cart.map((ele) => {
-                return (
-                  <Card
-                    key={ele.id}
-                    sx={{
-                      maxWidth: 300,
-                      marginBlock: 1,
-                      boxShadow: 20,
-                      marginInline: 2,
-                    }}
-                  >
-                    <CardHeader
-                      action={
-                        <IconButton
-                          aria-label="settings"
-                          size="large"
-                          onClick={() => {
-                            handleRemove(ele.id);
-                          }}
-                        >
-                          <DeleteIcon />
-                        </IconButton>
-                      }
-                      title={`${ele.name}  -   ₹${ele.price} per kg`}
-                      subheader={`Remaining Stock : ${ele.stock} Kg`}
-                    />
-                    {/* {stock} */}
-                    <CardMedia
-                      component="img"
-                      height="194"
-                      image={ele.img_url}
-                      alt={ele.name}
-                    />
-                    <CardActions>
-                      <div
-                        style={{
-                          display: "block",
-                          marginInline: "auto",
-                          padding: 10,
-                        }}
-                      >
-                        <span className="con">Quantity</span>
-                        <IconButton
-                          id="decre"
-                          size="large"
-                          name={ele.name}
-                          onClick={(event) => {
-                            handleChange(ele, -1);
-                            console.log(event.currentTarget.name)
-                            setStock(stock-1);
-                          }}
-                          >
-                          <RemoveIcon />
-                        </IconButton>
-                        <span className="con">{ele.amount}</span>
-                        <IconButton
-                          id="incre"
-                          size="large"
-                          name={ele.name}
-                          onClick={(event) => {
-                            handleChange(ele, 1);
-                            console.log(event.currentTarget.name)
-                            setStock(stock+1);
-                          }}
-                        >
-                          <AddIcon />
-                        </IconButton>
-                      </div>
-                    </CardActions>
-                  </Card>
-                );
-              })}
-            </Container>
-            <h1 id="total" style={{marginBottom:20}}>Cart Total : ₹{price} </h1>
-            <div className="buy">
-              <Link to="/payment" onClick={eventTrap}>
-                <Button size="large" variant="contained" color="warning" id="nothing-button">
-                  Proceed to Pay
-                </Button>
-              </Link>
+    <main id="main-content" className="cart-page">
+      <h1 className="cart-title">Your Cart</h1>
+
+      <div className="cart-grid">
+        {cart.map((ele) => (
+          <div
+            key={ele.id}
+            style={{
+              background: 'var(--bg-card)',
+              borderRadius: 'var(--radius-xl)',
+              overflow: 'hidden',
+              border: '1px solid var(--border)',
+              boxShadow: 'var(--shadow-sm)',
+              display: 'flex',
+              flexDirection: 'column',
+            }}
+          >
+            <img
+              src={ele.img_url}
+              alt={ele.name}
+              loading="lazy"
+              width="300"
+              height="194"
+              style={{ width: '100%', height: '194px', objectFit: 'cover' }}
+            />
+            <div style={{ padding: 'var(--space-5)', flex: 1 }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 'var(--space-2)' }}>
+                <div>
+                  <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-lg)', color: 'var(--text-primary)', margin: 0 }}>
+                    {ele.name}
+                  </h2>
+                  <p style={{ fontSize: 'var(--text-sm)', color: 'var(--text-secondary)', marginTop: '4px', fontVariantNumeric: 'tabular-nums' }}>
+                    ₹{ele.price} per kg
+                  </p>
+                  <p style={{ fontSize: 'var(--text-xs)', color: 'var(--text-muted)', marginTop: '2px' }}>
+                    Remaining stock: {ele.stock} kg
+                  </p>
+                </div>
+                <IconButton
+                  aria-label={`Remove ${ele.name} from cart`}
+                  size="medium"
+                  onClick={() => handleRemove(ele.id)}
+                  sx={{ color: '#e53935', '&:hover': { bgcolor: 'rgba(229,57,53,0.08)' } }}
+                >
+                  <DeleteIcon />
+                </IconButton>
+              </div>
+
+              {/* Quantity controls */}
+              <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 'var(--space-3)',
+                marginTop: 'var(--space-4)',
+                padding: 'var(--space-2) var(--space-3)',
+                background: 'var(--bg-subtle)',
+                borderRadius: 'var(--radius-full)',
+                width: 'fit-content',
+              }}>
+                <span style={{ fontSize: 'var(--text-sm)', color: 'var(--text-secondary)', marginRight: 'var(--space-2)' }}>
+                  Qty:
+                </span>
+                <IconButton
+                  id={`decre-${ele.id}`}
+                  size="small"
+                  aria-label={`Decrease ${ele.name} quantity`}
+                  onClick={() => handleChange(ele, -1)}
+                  sx={{ color: 'var(--primary)' }}
+                >
+                  <RemoveIcon fontSize="small" />
+                </IconButton>
+                <span style={{ minWidth: '24px', textAlign: 'center', fontVariantNumeric: 'tabular-nums', fontWeight: 600, color: 'var(--text-primary)' }}>
+                  {ele.amount}
+                </span>
+                <IconButton
+                  id={`incre-${ele.id}`}
+                  size="small"
+                  aria-label={`Increase ${ele.name} quantity`}
+                  onClick={() => handleChange(ele, 1)}
+                  sx={{ color: 'var(--primary)' }}
+                >
+                  <AddIcon fontSize="small" />
+                </IconButton>
+              </div>
+
+              <p style={{
+                marginTop: 'var(--space-3)',
+                fontSize: 'var(--text-base)',
+                fontWeight: 700,
+                color: 'var(--primary)',
+                fontVariantNumeric: 'tabular-nums',
+              }}>
+                Subtotal: ₹{(ele.amount * ele.price).toFixed(2)}
+              </p>
             </div>
-          </Box>
+          </div>
+        ))}
+      </div>
+
+      {/* Summary bar */}
+      <div className="cart-summary">
+        <div>
+          <p className="cart-total-label">Cart Total</p>
+          <p className="cart-total-amount" style={{ fontVariantNumeric: 'tabular-nums' }}>₹{price.toFixed(2)}</p>
         </div>
-      )}
-    </>
+        <Link to="/payment" onClick={eventTrap}>
+          <Button
+            id="proceed-to-pay"
+            variant="contained"
+            size="large"
+            sx={{
+              bgcolor: 'var(--accent)',
+              color: '#fff',
+              fontFamily: "'DM Sans', sans-serif",
+              fontWeight: 600,
+              borderRadius: '50px',
+              px: 5,
+              py: 1.5,
+              textTransform: 'none',
+              fontSize: '1rem',
+              '&:hover': { bgcolor: 'var(--accent-hover)' },
+            }}
+          >
+            Proceed to Pay
+          </Button>
+        </Link>
+      </div>
+    </main>
   );
 };
 
@@ -169,6 +187,6 @@ AddCart.propTypes = {
   cart: PropTypes.array.isRequired,
   setCart: PropTypes.func.isRequired,
   handleChange: PropTypes.func.isRequired,
-}
+};
 
 export default AddCart;

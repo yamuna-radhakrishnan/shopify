@@ -1,41 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Playfair+Display+SC:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Playfair+Display+SC:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+/* Service page font imports — consolidated */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=DM+Sans:wght@400;500;600&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+/* Override heading font for services to use Cinzel for a traditional feel */
+.services-section-title {
+  font-family: 'DM Serif Display', 'Cinzel', serif;
 }
 
-b{
-    font-size: 20px;
-    font-weight: 1900;
-}
-
-a{
-    text-decoration: none;
-}
-
-
-.head {
-    font-family: 'Cinzel', serif;
-    font-weight: 600;
-}
-
-li, p, .contentb {
-    font-family: 'Jost', sans-serif;
-    font-weight: 600;
-    line-height: 30px;
-    font-size: large;
-}
-
-.contentb{
-    font-family: 'Jost', sans-serif;
-    font-weight: 500;
-    /* color: red;      */
+/* Anchor scroll offset so sticky nav doesn't cover sections */
+.services-section {
+  scroll-margin-top: 140px;
 }

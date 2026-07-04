@@ -1,25 +1,39 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import { Box, Container, Typography } from '@mui/material'
-import '../Styles/about.css';
+import '../Styles/web.css';
 
 const About = () => {
-    return (
-        <Container className="hero" maxWidth={false} maxHeight={false}>
-            <Box className="ma" display="flex"
-                justifyContent="space-evenly"
-                alignItems="flex-start"
-                flexDirection="column"
-                minHeight="100vh"
-                padding="40px"
-            >
-                <Typography mt={8} variant='h2' component="h2" sx={{ fontFamily: "'Jost', sans-serif", fontWeight: 800 }}>About Us</Typography>
-                <div className="page" style={{textAlign:"justify"}}>
-                    <Typography style={{ color: 'black', fontSize: "22px", fontWeight: 800, fontFamily: "'Jost', sans-serif", lineHeight: "44px" }}><img src="./images/farmer.jpg" style={{boxShadow:"0 0 50px 50px #282727 inset", width:"250px", height:"200px"}} /><q style={{ color: "#244C5A", fontSize: 35, textAlign:"justify" }}>KNOW YOUR FARMER :)  KNOW YOUR CONSUMER</q><br /><b>Agriculture is the backbone of India.&nbsp;</b>India&apos;s economy relies heavily on agriculture. India served as a historical model for agriculture at one point. But today, nations like the USA and China surpass us by deploying cutting-edge technology that don&apos;t require as much labour. Okay, so other from focusing on the relationship between the consumer and the farmer, our employees are not interested in this subject. The Sad fact is that we have no connection to one another.<br /><b>We</b> identified that issue and developed this webpage to address it. It is possible for farmers and consumers to communicate. Consumers and farmers each have their own &quot;consumer portal&quot; and &quot;farmer portal&quot;. Another benefit is that stock exchange services are available here. A price exchange is necessary if there is a stock exchange. As a result, farmers are free to determine their own prices for their goods. Additionally, consumers can examine and contrast pricing variations and their causes. The ability for users to translate the entire website into different languages is an added benefit. For This project seeks to build a link between farmers and consumers. Additionally, to facilitate the sale of agricultural products, provide farmers with a steady source of income, and ensure the quality and hygienic of the final product.</Typography>
-                </div>
-            </Box>
-        </Container>
-    );
-}
+  return (
+    <main id="main-content" className="about-hero">
+      {/* Background */}
+      <div className="about-hero-bg" aria-hidden="true" />
+
+      <div className="about-content">
+        <p className="about-tag">Our Story</p>
+        <h1 className="about-title">Know Your Farmer.<br />Know Your Consumer.</h1>
+
+        <article className="about-body">
+          <img
+            src="/images/farmer.jpg"
+            alt="A farmer working in the field"
+            className="about-farmer-img"
+            loading="lazy"
+            width="220"
+            height="180"
+          />
+          <p style={{ marginBottom: '1.5rem' }}>
+            <strong>Agriculture is the backbone of India.</strong> India&apos;s economy relies heavily on farming — yet farmers and consumers remain disconnected. We identified this gap and built Farm Buddy to bridge it.
+          </p>
+          <p style={{ marginBottom: '1.5rem' }}>
+            Farm Buddy is a direct marketplace where farmers set their own prices and consumers can explore, compare, and buy fresh produce without middlemen. Each user gets their own portal — a Farmer Portal and a Consumer Portal — enabling transparent price discovery and fair trade.
+          </p>
+          <p>
+            Beyond buying and selling, we provide weather forecasts, government loan information, and subsidies — everything a farmer or consumer needs in one place. Our goal: give farmers a steady income, ensure product quality, and make fresh food accessible to all.
+          </p>
+        </article>
+      </div>
+    </main>
+  );
+};
 
 export default About;

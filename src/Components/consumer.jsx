@@ -1,118 +1,86 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import { makeStyles } from '@mui/styles';
-import Typography from '@mui/material/Typography';
-import { Box, Container, CardActionArea, CardActions } from '@mui/material';
-import "./navbar";
+import '../Styles/web.css';
 
-const useStyles = makeStyles({
-    root: {
-        maxWidth: 290,
-        transition: "transform 2.75s ease-in-out"
-    },
-    cardHovered: {
-        transform: "scale3d(1.25, 1.25, 1)"
-    }
-});
-
+const categories = [
+  {
+    title: 'Grains',
+    img: '/images/grains.jpeg',
+    desc: 'Rice, wheat, corn and more — straight from the field to your pantry.',
+    to: '/grains',
+  },
+  {
+    title: 'Vegetables',
+    img: '/images/vegetables.jpg',
+    desc: 'Farm-fresh vegetables picked at peak ripeness — no middlemen.',
+    to: '/vegetables',
+  },
+  {
+    title: 'Fruits',
+    img: '/images/fruits.jpg',
+    desc: 'Seasonal fruits, naturally ripened and sourced directly from orchards.',
+    to: '/fruits',
+  },
+  {
+    title: 'Spices',
+    img: '/images/spices.jpeg',
+    desc: 'Authentic Indian spices with bold flavour and full aroma.',
+    to: '/spices',
+  },
+  {
+    title: 'Nuts',
+    img: '/images/nuts.jpg',
+    desc: 'Protein-rich nuts and dry fruits — naturally sourced and chemical-free.',
+    to: '/nuts',
+  },
+];
 
 const Consumer = () => {
+  return (
+    <main id="main-content" className="consumer-page">
+      {/* Background */}
+      <div className="consumer-bg" aria-hidden="true" />
 
-    const classes = useStyles();
-    const [state, setState] = useState({
-        raised: false,
-        shadow: 1,
-    })
+      {/* Header */}
+      <header className="consumer-header">
+        <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2rem, 5vw, 3.5rem)', color: '#fff', marginBottom: '0.5rem' }}>
+          Consumer Section
+        </h1>
+        <p style={{ fontSize: 'var(--text-lg)', color: 'rgba(255,255,255,0.8)', marginBottom: '0.25rem' }}>
+          Healthful life begins here
+        </p>
+        <p style={{ fontSize: 'var(--text-base)', color: 'rgba(255,255,255,0.65)' }}>
+          Choose your category to explore fresh farm produce
+        </p>
+      </header>
 
-    const arr = [
-        {
-            "title": "Grains",
-            "img": "/images/grains.jpeg",
-            "desc": "A grain is a small, hard, dry fruit (caryopsis) – with or without an attached hull layer – harvested for human or animal consumption.",
-            "to": "/grains"
-        },
+      {/* Category Cards */}
+      <section className="consumer-cards-grid" aria-label="Product categories">
+        {categories.map((cat) => (
+          <Link
+            to={cat.to}
+            key={cat.title}
+            className="category-card"
+            aria-label={`Browse ${cat.title}`}
+          >
+            <img
+              className="category-card-img"
+              src={cat.img}
+              alt={`Fresh ${cat.title.toLowerCase()}`}
+              loading="lazy"
+              width="290"
+              height="180"
+            />
+            <div className="category-card-body">
+              <h2 className="category-card-title">{cat.title}</h2>
+              <p className="category-card-desc">{cat.desc}</p>
+            </div>
+          </Link>
+        ))}
+      </section>
+    </main>
+  );
+};
 
-        {
-            "title": "Vegetables",
-            "img": "/images/vegetables.jpg",
-            "desc": "Vegetables can be eaten either raw or cooked and play an important role in human nutrition, shortened slang term - veggie",
-            "to": "/vegetables"
-        },
-
-        {
-            "title": "Fruits",
-            "img": "/images/fruits.jpg",
-            "desc": "Fruits are the means by which flowering plants (also known as angiosperms) disseminate their seeds.fruit is a mature, ripened ovary",
-            "to": "/fruits"
-        },
-        {
-            "title": "Spices",
-            "img": "/images/spices.jpeg",
-            "desc": "A spice is a seed, fruit, root, bark, or other plant substance primarily used for flavoring or coloring food.",
-            "to": "/spices"
-        },
-        {
-            "title": "Nuts",
-            "img": "/images/nuts.jpg",
-            "desc": "Nuts are a great source of nutrients, such as protein, fat, fiber, vitamins, and minerals. ",
-            "to": "/nuts"
-        }
-    ];
-
-    return (
-
-        <Container className="main" maxWidth={false} style={{ backgroundImage: `url("/images/consumerback.jpg")`, height:"auto", }}>
-            <Box className="ma" display="flex"
-                justifyContent="center"
-                flexDirection="column"
-                minHeight="100vh"
-            >
-                <Box mb={7} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center" }}>
-                    <Typography variant="h2" style={{ color: "white" }}>Consumer Section</Typography>
-                    <Typography variant="h5" style={{ color: "white" }}>Healthful life begins from here....</Typography>
-                    <Typography variant="h5" style={{ color: "white" }} gutterBottom>Choose your Category !</Typography>
-                </Box>
-                <Box sx={{ display: "flex", flexWrap:"wrap", justifyContent:"space-evenly" }}>
-                    {
-                        arr.map((ele) => {
-                            return (
-                                <Link to={ele.to} key={ele.id} style={{ textDecoration: "none" }}>
-                                    <Card className={classes.root}
-                                        classes={{ root: state.raised ? classes.cardHovered : "" }}
-                                        onMouseOver={() => setState({ raised: true, shadow: 2 })}
-                                        onMouseOut={() => setState({ raised: false, shadow: 1 })}
-                                        raised={state.raised} zdepth={state.shadow} sx={{ width: 330, margin:8 }}>
-                                        <CardActionArea>
-                                            <CardMedia
-                                                component="img"
-                                                height="140"
-                                                image={ele.img}
-                                                alt={ele.title}
-                                            />
-                                            <CardContent>
-                                                <Typography gutterBottom variant="h5" component="div" sx={{ fontFamily: 'Times New Roman' }}>
-                                                    {ele.title}
-                                                </Typography>
-                                                <Typography variant="body2" color="text.secondary">
-                                                    {ele.desc}
-                                                </Typography>
-                                            </CardContent>
-                                        </CardActionArea>
-                                        <CardActions>
-                                        </CardActions>
-                                    </Card>
-                                </Link>
-                            );
-                        })
-                    }
-                </Box>
-            </Box>
-        </Container>
-    )
-}
-
-export default Consumer
+export default Consumer;

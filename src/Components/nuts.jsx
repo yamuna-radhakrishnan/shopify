@@ -1,115 +1,75 @@
-import React from "react";
-import Card from "@mui/material/Card";
-import CardMedia from "@mui/material/CardMedia";
-import CardContent from "@mui/material/CardContent";
-import CardActions from "@mui/material/CardActions";
-import { Box, Container } from "@mui/material";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import Swal from "sweetalert2";
-import PropTypes from "prop-types";
-import { SupaBase } from "./createClient";
+import React, { useEffect, useState } from 'react';
+import IconButton from '@mui/material/IconButton';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import Swal from 'sweetalert2';
+import PropTypes from 'prop-types';
+import { SupaBase } from './createClient';
+import '../Styles/web.css';
+
+const SkeletonCard = () => (
+  <div style={{ background: '#fff', borderRadius: 'var(--radius-xl)', overflow: 'hidden', border: '1px solid var(--border)', boxShadow: 'var(--shadow-sm)' }}>
+    <div className="skeleton" style={{ height: '200px', borderRadius: 0 }} />
+    <div style={{ padding: 'var(--space-6)' }}>
+      <div className="skeleton" style={{ height: '24px', width: '60%', marginBottom: 'var(--space-3)' }} />
+      <div className="skeleton" style={{ height: '16px', width: '90%', marginBottom: 'var(--space-2)' }} />
+      <div className="skeleton" style={{ height: '32px', width: '40%', marginTop: 'var(--space-4)' }} />
+    </div>
+  </div>
+);
 
 const Nuts = ({ handleClick }) => {
+  const [liked, setLiked] = useState({});
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  const [color, setColor] = React.useState({})
-  const [data, setData] = React.useState([])
-
-  const getData = async () => {
-    const { data: Nuts, error } = await SupaBase.from('Nuts').select()
-    if (error) {
-      console.log(error)
-    } else {
-      setData(Nuts)
-    }
-  }
-
-  React.useEffect(() => {
-    getData()
-  }, [data])
+  useEffect(() => {
+    const getData = async () => {
+      const { data: Nuts, error } = await SupaBase.from('Nuts').select();
+      if (error) { console.error(error); }
+      else { setData(Nuts); }
+      setLoading(false);
+    };
+    getData();
+    // FIX: removed `data` from deps — was causing infinite re-fetch loop
+  }, []);
 
   return (
-    <Container maxWidth={false} maxHeight={false}>
-      <Typography mt={8} variant="h1" component="h2">
-        Nuts
-      </Typography>
-      <Box
-        sx={{
-          maxwidth: "345px",
-          display: "flex",
-          justifyContent: "space-evenly",
-          flexWrap: "wrap",
-        }}
-      >
-        {data.map((ele) => {
-          return (
-            <Card
-            key={ele.id}
-              sx={{
-                maxWidth: 345,
-                marginBlock: 2,
-                boxShadow: 20,
-                marginInline: 2,
-              }}
-            >
-              <CardMedia
-                component="img"
-                height="194"
-                image={ele.img_url}
-                alt={ele.name}
-              />
-              <CardContent>
-                <Typography variant="h5" component="h2">
-                  {ele.name}
-                </Typography>
-                <Typography variant="subtitle1" component="p">
-                  {ele.description}
-                </Typography>
-                <Typography variant="h5" component="h2">
-                  ₹{ele.price}
-                  <span style={{ fontSize: '15px' }}> Per 50g</span>
-                </Typography>
-              </CardContent>
-              <CardActions>
-                <IconButton
-                  size="large"
-                  onClick={() => {
-                    handleClick(ele)
-                    Swal.fire({
-                      icon: 'success',
-                      title: 'Item added to cart :) ',
-                      timer: '2000',
-                    })
-                  }}
-                >
-                  <AddShoppingCartIcon />
-                </IconButton>
-                <IconButton
-                  size="large"
-                  style={{ color: color[ele.id] }}
-                  onClick={() => {
-                    setColor((prevColor) => ({
-                      ...prevColor,
-                      [ele.id]: 'red',
-                    }))
-                  }}
-                >
-                  <FavoriteIcon />
-                </IconButton>
-                <Typography style={{ marginLeft: 110 }}>
-                  Available Stock {ele.stock} Kg
-                </Typography>
-              </CardActions>
-            </Card>
-          )
-        })}
-      </Box>
-    </Container>
+    <main id="main-content" className="product-page-container">
+      <header className="product-page-header">
+        <h1 className="product-page-title">Nuts</h1>
+        <p className="product-page-subtitle">Protein-rich nuts and dry fruits — naturally sourced, chemical-free, and straight from farms.</p>
+      </header>
+      <section className="products-grid" aria-label="Nuts products" aria-busy={loading}>
+        {loading
+          ? Array.from({ length: 6 }).map((_, i) => <SkeletonCard key={i} />)
+          : data.map((ele) => (
+              <article key={ele.id} className="product-card">
+                <img className="product-card-img" src={ele.img_url} alt={`${ele.name} — fresh nuts`} loading="lazy" width="345" height="200" />
+                <div className="product-card-body">
+                  <h2 className="product-card-name">{ele.name}</h2>
+                  <p className="product-card-desc">{ele.description}</p>
+                  <p className="product-card-price">₹{ele.price}<span>per 50g</span></p>
+                  <span className="product-card-stock">Stock: {ele.stock} kg available</span>
+                </div>
+                <div className="product-card-actions">
+                  <IconButton size="large" aria-label={`Add ${ele.name} to cart`}
+                    onClick={() => { handleClick(ele); Swal.fire({ icon: 'success', title: 'Added to cart!', timer: 2000, showConfirmButton: false, toast: true, position: 'top-end' }); }}
+                    sx={{ color: 'var(--primary)', '&:hover': { bgcolor: 'var(--primary-light)' } }}>
+                    <AddShoppingCartIcon />
+                  </IconButton>
+                  <IconButton size="large" aria-label={liked[ele.id] ? `Remove ${ele.name} from wishlist` : `Add ${ele.name} to wishlist`} aria-pressed={Boolean(liked[ele.id])}
+                    onClick={() => setLiked((prev) => ({ ...prev, [ele.id]: !prev[ele.id] }))}
+                    sx={{ color: liked[ele.id] ? '#e53935' : 'rgba(0,0,0,0.3)', '&:hover': { bgcolor: 'rgba(229,57,53,0.08)' }, transition: 'color 200ms ease-out' }}>
+                    <FavoriteIcon />
+                  </IconButton>
+                </div>
+              </article>
+            ))}
+      </section>
+    </main>
   );
-}
-Nuts.propTypes = {
-  handleClick: PropTypes.func.isRequired,
-}
+};
+
+Nuts.propTypes = { handleClick: PropTypes.func.isRequired };
 export default Nuts;

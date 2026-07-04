@@ -1,148 +1,109 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import { Box, Container, Grid, ListItem, ListItemButton ,Typography, colors, List, ListItemText, autocompleteClasses, ListItemAvatar } from '@mui/material';
 import { Link } from 'react-router-dom';
 import '../Styles/web.css';
 
-const Home = () => {
-    // function googleTranslateElementInit() {
-    //     new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
-    // }
-    // <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    // const text1 = "//translate.google.com/translate_a/element.js?cb=";
-    return (
-      <>
-        {/* <Navbar /> */}
-        <Grid
-          className="main"
-          container
-          spacing={4}
-          justifyContent={'center'}
-          alignItems={'center'}
-          alignContent={'center'}
-        >
-          <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
-            <Container className="mainContent">
-              <Box
-                className="content"
-                display="flex"
-                justifyContent="space-evenly"
-                alignItems="flex-start"
-                flexDirection="column"
-                minHeight="70vh"
-              >
-                <Typography variant="h1" marginTop={13}>
-                  WELCOME YOU !! <br />
-                  <Typography variant="">GET CONNECTED</Typography>
-                </Typography>
-                <Typography>
-                  <q>விதைப்பவனே விலையை தகுதியிடுபவன்</q>
-                  <br />
-                  <q>The one who seeds will determine the price</q>
-                </Typography>
-              </Box>
-              <Box paddingBottom={2} marginTop={2}>
-                <Typography
-                  variant="subtitle1"
-                  style={{ fontSize: 18, color: 'white' }}
-                  gutterBottom
-                >
-                  This web act as a bridge for both farmers and consumers.
-                  <br />
-                  We sure that this app must be beneficial one.
-                  <br />
-                  All other details were in about page.
-                </Typography>
-                <Link to="/signup">
-                  <button
-                    className="cn"
-                    style={{ width: '160px', height: '40px' }}
-                  >
-                    JOIN US
-                  </button>
-                </Link>
-                <Link to="/signin">
-                  <button
-                    className="cna"
-                    style={{ width: '160px', height: '40px' }}
-                  >
-                    LOGIN
-                  </button>
-                </Link>
-              </Box>
-            </Container>
-          </Grid>
-          <Grid item xs={12} sm={4} md={4} lg={4} xl={3}>
-            <Container
-              className="feature"
-              sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                borderRadius: '10px',
-                py: 1,
-                px: 2,
-              }}
-            >
-              <Box style={{ display: 'flex', flexDirection: 'column' }}>
-                <Typography
-                  variant="h4"
-                  style={{ fontSize: 30, color: 'white' }}
-                  gutterBottom
-                >
-                  Features
-                </Typography>
+const featureItems = [
+  {
+    label: 'Know Your Weather',
+    to: '/weather',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+        <path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+        <circle cx="12" cy="12" r="5"/>
+      </svg>
+    ),
+  },
+  {
+    label: 'Loans & Subsidies',
+    to: '/services',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+        <rect x="2" y="7" width="20" height="14" rx="2"/>
+        <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
+        <line x1="12" y1="12" x2="12" y2="16"/>
+        <line x1="10" y1="14" x2="14" y2="14"/>
+      </svg>
+    ),
+  },
+  {
+    label: 'Fresh Produce Marketplace',
+    to: '/consumer',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+        <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <path d="M16 10a4 4 0 0 1-8 0"/>
+      </svg>
+    ),
+  },
+];
 
-                <List style={{ display: 'flex', flexDirection: 'column' }}>
-                  <ListItem disablePadding>
-                    <Link to="/weather">
-                      <ListItemButton
-                        style={{
-                          textDecoration: 'none',
-                          color: 'white',
-                          '&:hover': {
-                            color: 'black',
-                          },
-                        }}
-                      >
-                        <ListItemText primary="Know Your Weather" />
-                      </ListItemButton>
+const Home = () => {
+  return (
+    <main id="main-content">
+      <section className="home-hero" aria-label="Hero section">
+        <div className="home-hero-bg" aria-hidden="true" />
+
+        {/* Left: Hero text */}
+        <div
+          style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            gap: '2rem',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            width: '100%',
+            maxWidth: '1200px',
+            margin: '0 auto',
+            padding: '0 2rem',
+          }}
+        >
+          <div className="home-hero-content">
+            <p className="home-hero-eyebrow">Farm Buddy Platform</p>
+            <h1 className="home-hero-title">
+              From the Field<br />
+              <em>to Your Table</em>
+            </h1>
+            <blockquote className="home-hero-quote">
+              <span lang="ta">விதைப்பவனே விலையை தகுதியிடுபவன்</span>
+              <br />
+              The one who seeds determines the price
+            </blockquote>
+            <p className="home-hero-desc">
+              A direct bridge connecting farmers and consumers — enabling fair prices,
+              fresh produce, and a transparent agricultural marketplace.
+            </p>
+            <div className="home-hero-actions">
+              <Link to="/signup" className="btn-primary">
+                Join Us Today
+              </Link>
+              <Link to="/signin" className="btn-outline">
+                Sign In
+              </Link>
+            </div>
+          </div>
+
+          {/* Right: Feature card */}
+          <div className="home-features-card" style={{ minWidth: '240px', flex: '0 1 300px' }}>
+            <h2 className="home-features-title">Explore Features</h2>
+            <nav aria-label="Quick feature navigation">
+              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                {featureItems.map((item) => (
+                  <li key={item.to}>
+                    <Link to={item.to} className="home-feature-item">
+                      {item.icon}
+                      <span>{item.label}</span>
                     </Link>
-                  </ListItem>
-                  <ListItem disablePadding>
-                    <Link
-                      to="/services"
-                      style={{
-                        textDecoration: 'none',
-                        color: 'white',
-                        '&:hover': {
-                          color: '#cccccc',
-                        },
-                      }}
-                    >
-                      <ListItemButton>
-                        <ListItemText primary="Loans and Subsidies" />
-                      </ListItemButton>
-                    </Link>
-                  </ListItem>
-                  <ListItem disablePadding>
-                    <ListItemButton
-                      style={{
-                        color: 'white',
-                        '&:hover': {
-                          color: '#cccccc',
-                        },
-                      }}
-                    >
-                      <ListItemText primary="Price Calculator" />
-                    </ListItemButton>
-                  </ListItem>
-                </List>
-              </Box>
-            </Container>
-          </Grid>
-        </Grid>
-      </>
-    )
-}
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+};
 
 export default Home;

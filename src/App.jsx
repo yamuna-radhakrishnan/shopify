@@ -23,23 +23,23 @@ import Translate from "./Components/translate";
 
 const App = () => {
   const [cart, setCart] = useState([]);
+
+  // FIX: compare by item.id instead of object reference (indexOf fails for re-fetched objects)
   const handleClick = (item) => {
-    if (cart.indexOf(item) !== -1) return;
-    setCart([...cart, item]);
-    console.log(cart);
+    if (cart.some((c) => c.id === item.id)) return;
+    setCart([...cart, { ...item, amount: 1 }]);
   };
 
   const handleChange = (item, d) => {
-    const ind = cart.indexOf(item);
-    const arr = cart;
-    arr[ind].amount += d;
-    if (arr[ind].amount === 0) arr[ind].amount = 1;
-    console.log(arr[ind].amount);
-    setCart([...arr]);
+    const ind = cart.findIndex((c) => c.id === item.id);
+    if (ind === -1) return;
+    const arr = [...cart];
+    arr[ind] = { ...arr[ind], amount: Math.max(1, arr[ind].amount + d) };
+    setCart(arr);
   };
 
   useEffect(() => {
-    console.log("cart change");
+    // cart updated
   }, [cart]);
 
   const router = createBrowserRouter([

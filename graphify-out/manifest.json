@@ -1,0 +1,572 @@
+{
+  "package.json": {
+    "mtime": 1783144261.3258998,
+    "ast_hash": "5edf705ca8f8430e7b25af9882979c79",
+    "semantic_hash": ""
+  },
+  "public/locales/chi/translation.json": {
+    "mtime": 1783144262.0449674,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "public/locales/en/translation.json": {
+    "mtime": 1783144262.0449674,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "public/locales/ko/translation.json": {
+    "mtime": 1783144262.0449674,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "public/manifest.json": {
+    "mtime": 1783144262.0449674,
+    "ast_hash": "5db22483d50566f269e23775a735912b",
+    "semantic_hash": ""
+  },
+  "src/App.jsx": {
+    "mtime": 1783144262.0528915,
+    "ast_hash": "88cac545a6665f8345a49a829bb8baa7",
+    "semantic_hash": ""
+  },
+  "src/Components/SignInWithSupaBase.jsx": {
+    "mtime": 1783144262.05766,
+    "ast_hash": "a6c19e4db2a4f82717cd0092e980bace",
+    "semantic_hash": ""
+  },
+  "src/Components/SignUpSide.jsx": {
+    "mtime": 1783144262.05766,
+    "ast_hash": "62b51d4571abfd389e04a666cff5d6ef",
+    "semantic_hash": ""
+  },
+  "src/Components/SignUpWithSupaBase.jsx": {
+    "mtime": 1783144262.0613034,
+    "ast_hash": "16b9f28256f9326b28a435caef5946de",
+    "semantic_hash": ""
+  },
+  "src/Components/SigninSide.jsx": {
+    "mtime": 1783144262.0635786,
+    "ast_hash": "be83440afa38d543def5f91eb5e2b647",
+    "semantic_hash": ""
+  },
+  "src/Components/about.jsx": {
+    "mtime": 1783144262.0635786,
+    "ast_hash": "dfd3b044708d0fc0bc9c82c6d2dc3eec",
+    "semantic_hash": ""
+  },
+  "src/Components/addCart.jsx": {
+    "mtime": 1783144262.0635786,
+    "ast_hash": "6b50757db27a1b43e3a874ed50245bab",
+    "semantic_hash": ""
+  },
+  "src/Components/consumer.jsx": {
+    "mtime": 1783144262.0635786,
+    "ast_hash": "f19b1818e28dfa47e27c42057892f68d",
+    "semantic_hash": ""
+  },
+  "src/Components/createClient.jsx": {
+    "mtime": 1783144262.0635786,
+    "ast_hash": "9a28fdeb650fbf61dc35ea95aad8fd4f",
+    "semantic_hash": ""
+  },
+  "src/Components/farmer.jsx": {
+    "mtime": 1783144262.0635786,
+    "ast_hash": "66f65fc7d0dcea94c6b4cb2eeda926e9",
+    "semantic_hash": ""
+  },
+  "src/Components/forgetPassword.jsx": {
+    "mtime": 1783144262.0697262,
+    "ast_hash": "56b0ed8dd4c90ed93502328b8cf86366",
+    "semantic_hash": ""
+  },
+  "src/Components/fruits.jsx": {
+    "mtime": 1783144262.0697262,
+    "ast_hash": "e3a1415d94bc12704fcf97a78fb6867b",
+    "semantic_hash": ""
+  },
+  "src/Components/grains.jsx": {
+    "mtime": 1783144262.0729427,
+    "ast_hash": "de7a1f3a1ac04f974c246668e52250bf",
+    "semantic_hash": ""
+  },
+  "src/Components/home.jsx": {
+    "mtime": 1783144262.0744603,
+    "ast_hash": "2e500fe75babf4a926f47f54eca91f44",
+    "semantic_hash": ""
+  },
+  "src/Components/navbar.jsx": {
+    "mtime": 1783144262.0744603,
+    "ast_hash": "9b7d16b5f9aedca8cbbe13b42fe6671d",
+    "semantic_hash": ""
+  },
+  "src/Components/nothing.jsx": {
+    "mtime": 1783144262.077576,
+    "ast_hash": "8ff2ee8de44e4adff46fb115b79f756d",
+    "semantic_hash": ""
+  },
+  "src/Components/nuts.jsx": {
+    "mtime": 1783144262.077576,
+    "ast_hash": "eafddc4de073cb387a46d394d952786d",
+    "semantic_hash": ""
+  },
+  "src/Components/payment.jsx": {
+    "mtime": 1783144262.077576,
+    "ast_hash": "583efc32635a549422b51a65c260abc8",
+    "semantic_hash": ""
+  },
+  "src/Components/services.jsx": {
+    "mtime": 1783144262.077576,
+    "ast_hash": "b9ad2cf769552d22a0562a7c50878eb6",
+    "semantic_hash": ""
+  },
+  "src/Components/spices.jsx": {
+    "mtime": 1783144262.077576,
+    "ast_hash": "2321bc6c6036f43c24577c1dc9d2dfca",
+    "semantic_hash": ""
+  },
+  "src/Components/translate.jsx": {
+    "mtime": 1783144262.0822577,
+    "ast_hash": "4b870d4b81b0b60369f473b7205ffc18",
+    "semantic_hash": ""
+  },
+  "src/Components/updatePassword.jsx": {
+    "mtime": 1783144262.0822577,
+    "ast_hash": "51d0a1ab5f4c70403216c1b1b4984e6e",
+    "semantic_hash": ""
+  },
+  "src/Components/vegetable.jsx": {
+    "mtime": 1783144262.0848703,
+    "ast_hash": "87c7bc8da7619bb0b9b857ef486a1bec",
+    "semantic_hash": ""
+  },
+  "src/Components/weather.jsx": {
+    "mtime": 1783144262.0859528,
+    "ast_hash": "c2aa51a49eaedc4ec2d1f53e666f1ffc",
+    "semantic_hash": ""
+  },
+  "src/fprod.json": {
+    "mtime": 1783144262.1024554,
+    "ast_hash": "3c889d6fef25e33cb234140dfdbc1881",
+    "semantic_hash": ""
+  },
+  "src/gprod.json": {
+    "mtime": 1783144262.1024554,
+    "ast_hash": "d9bd3a16ee8cd387829bb4354ec9aff5",
+    "semantic_hash": ""
+  },
+  "src/main.jsx": {
+    "mtime": 1783144262.104769,
+    "ast_hash": "503e75cc7081ec5881733b2e437723f6",
+    "semantic_hash": ""
+  },
+  "src/nprod.json": {
+    "mtime": 1783144262.1062968,
+    "ast_hash": "1a68f72c3270b775505e73b377ca89d2",
+    "semantic_hash": ""
+  },
+  "src/sprod.json": {
+    "mtime": 1783144262.1062968,
+    "ast_hash": "a4a96cff2dfc9dff4daab4b5f287602c",
+    "semantic_hash": ""
+  },
+  "src/vite-env.d.ts": {
+    "mtime": 1783144262.1062968,
+    "ast_hash": "8f68c27c3fc38817b2726b20e2d4f1ee",
+    "semantic_hash": ""
+  },
+  "src/vprod.json": {
+    "mtime": 1783144262.110606,
+    "ast_hash": "6a56eaf204dd3eed3738c8c4b55d5a1c",
+    "semantic_hash": ""
+  },
+  "vite.config.js": {
+    "mtime": 1783144262.110606,
+    "ast_hash": "0a81e4c5b32b2af661ac6853bbe8d961",
+    "semantic_hash": ""
+  },
+  "LICENSE.md": {
+    "mtime": 1783144261.3175223,
+    "ast_hash": "92de252b97b5d9f1d1d361ec3c30951f",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1783144261.3175223,
+    "ast_hash": "d630c32760195f36d4fd639b03cbcff3",
+    "semantic_hash": ""
+  },
+  "index.html": {
+    "mtime": 1783144261.320445,
+    "ast_hash": "45097600de3445e795812b538c791914",
+    "semantic_hash": ""
+  },
+  "public/robots.txt": {
+    "mtime": 1783144262.0528915,
+    "ast_hash": "61c27d2cd39a713f7829422c3d9edcc7",
+    "semantic_hash": ""
+  },
+  "public/google-pay-icon.svg": {
+    "mtime": 1783144261.330563,
+    "ast_hash": "425d5a0d1b818228fe116724cf2e2fb8",
+    "semantic_hash": ""
+  },
+  "public/images/Blackquinoa.jpg": {
+    "mtime": 1783144261.330563,
+    "ast_hash": "f04e67cef7d89f3a0ee1cca6d2a9e29e",
+    "semantic_hash": ""
+  },
+  "public/images/Brinjal.jpg": {
+    "mtime": 1783144261.334613,
+    "ast_hash": "d12103c5e1431673d43022e4694f8f06",
+    "semantic_hash": ""
+  },
+  "public/images/Farmer1.jpg": {
+    "mtime": 1783144261.3353999,
+    "ast_hash": "43c74e2b3edae2e94e7a86b16effabbf",
+    "semantic_hash": ""
+  },
+  "public/images/Grapes.jpg": {
+    "mtime": 1783144261.3383994,
+    "ast_hash": "472cbe198b334292f88ba9846f2a8f01",
+    "semantic_hash": ""
+  },
+  "public/images/aboutback.jpg": {
+    "mtime": 1783144261.349962,
+    "ast_hash": "c4b33a4de47202ef38d43c708d88952e",
+    "semantic_hash": ""
+  },
+  "public/images/aboutback1.jpg": {
+    "mtime": 1783144261.3581662,
+    "ast_hash": "24e3ca76048f36c0d034632952336892",
+    "semantic_hash": ""
+  },
+  "public/images/almonds.jpeg": {
+    "mtime": 1783144261.3600428,
+    "ast_hash": "d3f3f463111cf3e813ac7d163d458968",
+    "semantic_hash": ""
+  },
+  "public/images/amaranth.jpg": {
+    "mtime": 1783144261.3600428,
+    "ast_hash": "a7088f5431457d7c1bb0b78a71d0828f",
+    "semantic_hash": ""
+  },
+  "public/images/apples.jpg": {
+    "mtime": 1783144261.3676274,
+    "ast_hash": "86ef4fe80c3eaf33973a1c125972a91c",
+    "semantic_hash": ""
+  },
+  "public/images/beetroot.jpg": {
+    "mtime": 1783144261.3693707,
+    "ast_hash": "89a4de67f154efe525e72b677441c76d",
+    "semantic_hash": ""
+  },
+  "public/images/brown rice.jpg": {
+    "mtime": 1783144261.370392,
+    "ast_hash": "5e728f3496c6f3cb0134bd79c7a4bd00",
+    "semantic_hash": ""
+  },
+  "public/images/buckwheat.jpg": {
+    "mtime": 1783144261.370392,
+    "ast_hash": "327532a01d1da460b8f32b8e8882de2a",
+    "semantic_hash": ""
+  },
+  "public/images/cabbage.jpg": {
+    "mtime": 1783144261.3767333,
+    "ast_hash": "c90335618bbf304b68c27735d8dd30b9",
+    "semantic_hash": ""
+  },
+  "public/images/cardamom.jpg": {
+    "mtime": 1783144261.3809385,
+    "ast_hash": "3c328d9f7d7fe85ab0cd53eb8170e475",
+    "semantic_hash": ""
+  },
+  "public/images/cashew.jpg": {
+    "mtime": 1783144261.419492,
+    "ast_hash": "1c23a63810bd80ee604c6cc050350087",
+    "semantic_hash": ""
+  },
+  "public/images/chestnuts.jpg": {
+    "mtime": 1783144261.4577012,
+    "ast_hash": "d1342b00acc6bb4cb369acafd6569cae",
+    "semantic_hash": ""
+  },
+  "public/images/chilly.jpg": {
+    "mtime": 1783144261.4577012,
+    "ast_hash": "af05cfc2bd026a555f44754b80d9e820",
+    "semantic_hash": ""
+  },
+  "public/images/cinnamon.jpg": {
+    "mtime": 1783144261.5087838,
+    "ast_hash": "0e0960cf1b19a88e403975105877eb90",
+    "semantic_hash": ""
+  },
+  "public/images/cloves.jpg": {
+    "mtime": 1783144261.5087838,
+    "ast_hash": "645493cb8068dc9a6878116cc2ad2971",
+    "semantic_hash": ""
+  },
+  "public/images/coffee.jpeg": {
+    "mtime": 1783144261.514465,
+    "ast_hash": "90ca9fb764c012207cb87f51326c5e11",
+    "semantic_hash": ""
+  },
+  "public/images/consumerback.jpg": {
+    "mtime": 1783144261.5228004,
+    "ast_hash": "719a89d1e7a51dd19f22016ecc0621c4",
+    "semantic_hash": ""
+  },
+  "public/images/coriander.jpeg": {
+    "mtime": 1783144261.5299766,
+    "ast_hash": "acfde13e96bd7f95e15a8a00aae0da44",
+    "semantic_hash": ""
+  },
+  "public/images/cumin.jpg": {
+    "mtime": 1783144261.574394,
+    "ast_hash": "207ee961e38043a352e02b5ea2d3bd9c",
+    "semantic_hash": ""
+  },
+  "public/images/famer.jpg": {
+    "mtime": 1783144261.5791235,
+    "ast_hash": "a5e3e8cc373f133eec91252bf134cdab",
+    "semantic_hash": ""
+  },
+  "public/images/farmbuddy_bg.jpeg": {
+    "mtime": 1783144261.581561,
+    "ast_hash": "9f836e6f88ac88255600c8eeea585533",
+    "semantic_hash": ""
+  },
+  "public/images/farmer.jpg": {
+    "mtime": 1783144261.5835874,
+    "ast_hash": "b992adf4259aa2798ead67e2b95e4406",
+    "semantic_hash": ""
+  },
+  "public/images/fruits.jpg": {
+    "mtime": 1783144261.5881002,
+    "ast_hash": "d4f9b6fd9a0bced899130e636b240aa9",
+    "semantic_hash": ""
+  },
+  "public/images/garlic.jpg": {
+    "mtime": 1783144261.5881002,
+    "ast_hash": "7c886572fedb4df6cd2afad5d059ca4c",
+    "semantic_hash": ""
+  },
+  "public/images/grains.jpeg": {
+    "mtime": 1783144261.5930545,
+    "ast_hash": "2c3bfc843d3412f61f178713e3ef6899",
+    "semantic_hash": ""
+  },
+  "public/images/guava.jpg": {
+    "mtime": 1783144261.5968902,
+    "ast_hash": "2f8f080447b838d7a38eb4888d979a97",
+    "semantic_hash": ""
+  },
+  "public/images/hazel_nuts.jpg": {
+    "mtime": 1783144261.5968902,
+    "ast_hash": "64731c81e620f0b75de55f7d4ec7f93d",
+    "semantic_hash": ""
+  },
+  "public/images/ladiesfinger.jpg": {
+    "mtime": 1783144261.60091,
+    "ast_hash": "6bdea1d942ef1280113af54a212620c8",
+    "semantic_hash": ""
+  },
+  "public/images/lemon.jpg": {
+    "mtime": 1783144261.6035776,
+    "ast_hash": "d6831e0dd70e5301867e9c54671aa64f",
+    "semantic_hash": ""
+  },
+  "public/images/litchi.jpg": {
+    "mtime": 1783144261.6282494,
+    "ast_hash": "678f835363f9a5e931a88fd4bb91cf07",
+    "semantic_hash": ""
+  },
+  "public/images/login.jpg": {
+    "mtime": 1783144261.633615,
+    "ast_hash": "5eabfb8410e0fbdb97911d0bb20446ea",
+    "semantic_hash": ""
+  },
+  "public/images/logo-black-transparent.png": {
+    "mtime": 1783144261.6366687,
+    "ast_hash": "21036b6b297c1d992b79af8e4cd78fcd",
+    "semantic_hash": ""
+  },
+  "public/images/logo-white-transparent.png": {
+    "mtime": 1783144261.6389937,
+    "ast_hash": "8989a5740062ba5a082fd9d2fa059107",
+    "semantic_hash": ""
+  },
+  "public/images/logo.png": {
+    "mtime": 1783144261.6389937,
+    "ast_hash": "28642a6330f9873e1491605df353e0c1",
+    "semantic_hash": ""
+  },
+  "public/images/mango.jpg": {
+    "mtime": 1783144261.6389937,
+    "ast_hash": "4c309722746ea5c552cd91ca4fa96d89",
+    "semantic_hash": ""
+  },
+  "public/images/nothing.jpg": {
+    "mtime": 1783144261.6561754,
+    "ast_hash": "2baaf488d01a57c407db739fe97e09e7",
+    "semantic_hash": ""
+  },
+  "public/images/nutmegs.jpg": {
+    "mtime": 1783144261.65809,
+    "ast_hash": "f8a5cdaca2bd6065ae892053c767b3cd",
+    "semantic_hash": ""
+  },
+  "public/images/nuts.jpg": {
+    "mtime": 1783144261.6596568,
+    "ast_hash": "99ae3692d2608f56c64ebdfc876c81f1",
+    "semantic_hash": ""
+  },
+  "public/images/oat.jpg": {
+    "mtime": 1783144261.660666,
+    "ast_hash": "469eefb5f1046357f466b5acbb96f962",
+    "semantic_hash": ""
+  },
+  "public/images/orange.jpg": {
+    "mtime": 1783144261.662882,
+    "ast_hash": "38bce70b9554415d16f216e53c022852",
+    "semantic_hash": ""
+  },
+  "public/images/paymentbg.jpg": {
+    "mtime": 1783144261.6914814,
+    "ast_hash": "696a180f50b724b6c54c0702f9806b16",
+    "semantic_hash": ""
+  },
+  "public/images/peanuts.jpg": {
+    "mtime": 1783144261.7421994,
+    "ast_hash": "60e6f8dc32d8cb94a6ea92dca5a6adb9",
+    "semantic_hash": ""
+  },
+  "public/images/pepper.jpg": {
+    "mtime": 1783144261.7798235,
+    "ast_hash": "6768baa4958f6ae269527afa2f5df7db",
+    "semantic_hash": ""
+  },
+  "public/images/pineapple.jpg": {
+    "mtime": 1783144261.7837286,
+    "ast_hash": "52b9c6389174f62e48cab50336a24770",
+    "semantic_hash": ""
+  },
+  "public/images/pista.jpeg": {
+    "mtime": 1783144261.78507,
+    "ast_hash": "46d71396d0bbb1f3de1d083ab363053f",
+    "semantic_hash": ""
+  },
+  "public/images/plum.jpg": {
+    "mtime": 1783144261.786094,
+    "ast_hash": "3e5dedf9b4b589987afcd1df888eca01",
+    "semantic_hash": ""
+  },
+  "public/images/pomegranate.jpg": {
+    "mtime": 1783144261.7901406,
+    "ast_hash": "3bac9629e8a2c95b151d7e27093d7803",
+    "semantic_hash": ""
+  },
+  "public/images/potato.jpg": {
+    "mtime": 1783144261.7917702,
+    "ast_hash": "02fc2495f484df332ab08482af9eade0",
+    "semantic_hash": ""
+  },
+  "public/images/pumkin_seeds.jpg": {
+    "mtime": 1783144261.79355,
+    "ast_hash": "025097bce44cebbcab51dcdfa6579413",
+    "semantic_hash": ""
+  },
+  "public/images/pumpkin.jpg": {
+    "mtime": 1783144261.79355,
+    "ast_hash": "67d94ba16d7e146a6d6646830991fa25",
+    "semantic_hash": ""
+  },
+  "public/images/rice.jpg": {
+    "mtime": 1783144261.7969513,
+    "ast_hash": "af6df0e627d76928f4db53c859d00562",
+    "semantic_hash": ""
+  },
+  "public/images/servicesback.jpg": {
+    "mtime": 1783144261.8289444,
+    "ast_hash": "bd3120f38e7b982c9fa03392a4e49c1c",
+    "semantic_hash": ""
+  },
+  "public/images/signup.jpg": {
+    "mtime": 1783144261.8342776,
+    "ast_hash": "1e0ced92e6ae0cae12270ac7962ffe15",
+    "semantic_hash": ""
+  },
+  "public/images/sorgum.jpg": {
+    "mtime": 1783144261.835797,
+    "ast_hash": "9c09bf4aa521458743b7d1ccdf1979c2",
+    "semantic_hash": ""
+  },
+  "public/images/spices.jpeg": {
+    "mtime": 1783144261.8381987,
+    "ast_hash": "76357f544c89e6d0d106aa006a642e9e",
+    "semantic_hash": ""
+  },
+  "public/images/spices.jpg": {
+    "mtime": 1783144261.9651031,
+    "ast_hash": "23de1497099f0e9fa6fb8839a8308ff5",
+    "semantic_hash": ""
+  },
+  "public/images/star_anise.jpeg": {
+    "mtime": 1783144261.9755077,
+    "ast_hash": "b7e5d5ea13631c9f017d582518bb4efa",
+    "semantic_hash": ""
+  },
+  "public/images/sweetcorn.jpg": {
+    "mtime": 1783144261.979159,
+    "ast_hash": "cf83e160778bb834ec2179bed7de708d",
+    "semantic_hash": ""
+  },
+  "public/images/teff.jpg": {
+    "mtime": 1783144261.979159,
+    "ast_hash": "094702b6b4f3cd056866ad367f30a4c5",
+    "semantic_hash": ""
+  },
+  "public/images/tomato.jpg": {
+    "mtime": 1783144261.979159,
+    "ast_hash": "fe1e7ea16f39ba67411d733ad655d3e2",
+    "semantic_hash": ""
+  },
+  "public/images/turmeric.jpg": {
+    "mtime": 1783144261.979159,
+    "ast_hash": "b89db5302b83abc797e6013800910999",
+    "semantic_hash": ""
+  },
+  "public/images/vegetables.jpg": {
+    "mtime": 1783144261.979159,
+    "ast_hash": "8b631b107a8fe4c35ff09a83401dba6e",
+    "semantic_hash": ""
+  },
+  "public/images/walnut.jpg": {
+    "mtime": 1783144262.020488,
+    "ast_hash": "d02f5327e0464c33ce73cea124e0f307",
+    "semantic_hash": ""
+  },
+  "public/images/watermelon.jpg": {
+    "mtime": 1783144262.021,
+    "ast_hash": "0456ccecf4d80745abd207a5ea085b74",
+    "semantic_hash": ""
+  },
+  "public/images/weather_bg.jpg": {
+    "mtime": 1783144262.021,
+    "ast_hash": "b196240fbc677237a61d313bf385114c",
+    "semantic_hash": ""
+  },
+  "public/images/weather_bg2.jpg": {
+    "mtime": 1783144262.0318575,
+    "ast_hash": "d413bd3eb52d860d897a693c0bfa3924",
+    "semantic_hash": ""
+  },
+  "public/images/wheat.jpg": {
+    "mtime": 1783144262.0370889,
+    "ast_hash": "037f5a6a4bedebf6bff9ddb65d22c8bb",
+    "semantic_hash": ""
+  },
+  "public/images/women.jpg": {
+    "mtime": 1783144262.0449674,
+    "ast_hash": "341c03c13b164a5dbc194d4fb73300db",
+    "semantic_hash": ""
+  }
+}
