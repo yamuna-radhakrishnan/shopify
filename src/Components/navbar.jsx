@@ -182,7 +182,6 @@ const Navbar = ({ children }) => {
                         fontSize: '0.875rem',
                         letterSpacing: '0.01em',
                         textTransform: 'none',
-                        borderRadius: '20px',
                         px: 2,
                         py: 0.75,
                         position: 'relative',

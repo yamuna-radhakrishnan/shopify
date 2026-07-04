@@ -33,27 +33,24 @@ export default function SignInSide() {
       email: details.email,
       password: details.password,
     });
-    console.error(error);
     if (error) {
       Swal.fire({
         icon: "error",
         title: "Oops...",
-        text: "Something went wrong!",
-        footer: '<a href="${url}">Why do I have this issue?</a>',
-        timer: "4000",
+        text: error.message || "Something went wrong!",
+        timer: 4000,
       });
+      return;
     }
-    else if (data) {
-      Swal.fire({
-        icon: "success",
-        title: "Yayy...",
-        text: "Successfully Signed In!",
-        timer: "2000",
-      })
-      setTimeout(() => {
-        navigate("/consumer");
-      }, 2000);
-    }
+    Swal.fire({
+      icon: "success",
+      title: "Yayy...",
+      text: "Successfully Signed In!",
+      timer: 2000,
+    });
+    setTimeout(() => {
+      navigate("/consumer");
+    }, 2000);
   };
 
   const handleChange = (event) => {
@@ -131,7 +128,7 @@ export default function SignInSide() {
                 label="Remember me"
               />
               <Button
-                onClick={handleSubmit}
+                type="submit"
                 fullWidth
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}

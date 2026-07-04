@@ -26,7 +26,16 @@ export default function UpdatePassword() {
 
   const handlePassword = async (e) => {
     e.preventDefault();
-    const { data } = await SupaBase.auth.updateUser({ password: password });
+    const { data, error } = await SupaBase.auth.updateUser({ password: password });
+    if (error) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: error.message || "Failed to update password!",
+        timer: 4000,
+      });
+      return;
+    }
     if (data) {
       Swal.fire({
         icon: "success",

@@ -25,13 +25,15 @@ const Vegetables = ({ handleClick }) => {
 
   useEffect(() => {
     const getData = async () => {
-      const { data: Vegetables, error } = await SupaBase.from('Vegetables').select();
+      const { data: Vegetables, error } = await SupaBase.from('vegetables').select();
       if (error) { console.error(error); }
-      else { setData(Vegetables); }
+      else { setData(Vegetables || []); }
       setLoading(false);
     };
     getData();
   }, []);
+
+  const imgOf = (ele) => ele.img_url || ele.image_url || ele.image || '';
 
   return (
     <main id="main-content" className="product-page-container">
@@ -42,9 +44,13 @@ const Vegetables = ({ handleClick }) => {
       <section className="products-grid" aria-label="Vegetables products" aria-busy={loading}>
         {loading
           ? Array.from({ length: 6 }).map((_, i) => <SkeletonCard key={i} />)
-          : data.map((ele) => (
+          : data.length === 0
+            ? <p style={{ gridColumn: '1 / -1', textAlign: 'center', padding: 'var(--space-12)', color: 'var(--text-secondary)' }}>
+                No vegetables available right now. Please check back soon.
+              </p>
+            : data.map((ele) => (
               <article key={ele.id} className="product-card">
-                <img className="product-card-img" src={ele.img_url} alt={`${ele.name} — fresh vegetable`} loading="lazy" width="345" height="200" />
+                <img className="product-card-img" src={imgOf(ele)} alt={`${ele.name} — fresh vegetable`} loading="lazy" width="345" height="200" />
                 <div className="product-card-body">
                   <h2 className="product-card-name">{ele.name}</h2>
                   <p className="product-card-desc">{ele.description}</p>

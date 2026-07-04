@@ -70,7 +70,7 @@ const AddCart = ({ cart, setCart, handleChange }) => {
             }}
           >
             <img
-              src={ele.img_url}
+              src={ele.img_url || ele.image_url || ele.image || ''}
               alt={ele.name}
               loading="lazy"
               width="300"

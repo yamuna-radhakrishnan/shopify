@@ -55,15 +55,14 @@ export default function SignIn() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { error } = await SupaBase.auth.resetPasswordForEmail(email, {
-      redirectTo: "http://localhost:5173/updatePassword",
+      redirectTo: `${window.location.origin}/updatePassword`,
     });
     if (error) {
       Swal.fire({
         icon: "error",
         title: "Oops...",
-        text: "Enter Valid Email Address! ",
-        footer: '<a href="${url}">Why do I have this issue?</a>',
-        timer: "4000",
+        text: error.message || "Enter Valid Email Address!",
+        timer: 4000,
       });
     } else {
       Swal.fire({

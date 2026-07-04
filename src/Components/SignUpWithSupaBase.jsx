@@ -32,32 +32,51 @@ export default function SignUpSide() {
   //   nav('/signin')
   // }
 
-  const handleSubmit = async () => {
-    // eslint-disable-next-line no-unused-vars
+  const handleSubmit = async (event) => {
+    if (event && event.preventDefault) event.preventDefault();
     const name = input.firstName + input.lastName
 
-    const { data, error } = await SupaBase.auth.signUp({
-      email: input.email,
-      password: input.password,
-      redirectTo: 'http://localhost:5173/signin',
-    })
-
-    if (data) {
-      Swal.fire({
-        icon: 'success',
-        title: 'Yayy...',
-        text: 'Successfully Signed Up! Please verify your email and login to continue.',
-        timer: '2000',
-      })
-    }
-    if (error) {
+    if (input.password !== input.passwordConfirm) {
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: 'Something went wrong!',
-        footer: '<a href="${url}">Why do I have this issue?</a>',
-        timer: '4000',
+        text: 'Passwords do not match!',
+        timer: 3000,
+      });
+      return;
+    }
+
+    try {
+      const { data, error } = await SupaBase.auth.signUp({
+        email: input.email,
+        password: input.password,
+        options: { data: { full_name: name }, emailRedirectTo: `${window.location.origin}/signin` },
       })
+
+      if (error) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: error.message || 'Something went wrong!',
+          timer: 4000,
+        });
+        return;
+      }
+      if (data) {
+        Swal.fire({
+          icon: 'success',
+          title: 'Yayy...',
+          text: 'Successfully Signed Up! Please verify your email and login to continue.',
+          timer: 2000,
+        })
+      }
+    } catch (e) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: e.message || 'Something went wrong!',
+        timer: 4000,
+      });
     }
   }
 
@@ -247,7 +266,7 @@ export default function SignUpSide() {
                     </Grid>
                   </Grid>
                   <Button
-                    onClick={handleSubmit}
+                    type="submit"
                     fullWidth
                     variant="contained"
                     sx={{ mt: 3, mb: 2 }}

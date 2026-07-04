@@ -122,10 +122,6 @@ const App = () => {
           element: <Farmer />,
         },
         {
-          path: "/translate",
-          element: <Translate />,
-        },
-        {
           path: "/forgetPassword",
           element: <ForgetPassword />,
         },
