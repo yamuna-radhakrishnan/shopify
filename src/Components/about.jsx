@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { getImgUrl } from './imgHelper';
 import '../Styles/web.css';
 import '../Styles/about.css';
 
@@ -33,7 +34,7 @@ const About = () => {
           <div className="about-narrative-media">
             <div className="media-card card-farmer">
               <img
-                src="/images/farmer.jpg"
+                src={getImgUrl('/images/farmer.jpg')}
                 alt="Farmer working in the field"
                 className="about-narrative-img"
                 loading="lazy"
@@ -42,7 +43,7 @@ const About = () => {
             </div>
             <div className="media-card card-consumer">
               <img
-                src="/images/women.jpg"
+                src={getImgUrl('/images/women.jpg')}
                 alt="Fresh produce delivery to consumer"
                 className="about-narrative-img"
                 loading="lazy"
@@ -273,7 +274,7 @@ const About = () => {
                     </div>
                     <div className="glass-body">
                       <div className="preview-list-item">
-                        <img src="/images/apples.jpg" alt="Apple" className="preview-item-img" />
+                        <img src={getImgUrl('/images/apples.jpg')} alt="Apple" className="preview-item-img" />
                         <div className="item-info">
                           <span className="item-name">Kashmiri Apples (Fresh)</span>
                           <span className="item-sub">Farmer: Ramesh Kumar</span>
@@ -281,7 +282,7 @@ const About = () => {
                         <span className="item-price">₹120</span>
                       </div>
                       <div className="preview-list-item">
-                        <img src="/images/vegetables.jpg" alt="Tomato" className="preview-item-img" />
+                        <img src={getImgUrl('/images/vegetables.jpg')} alt="Tomato" className="preview-item-img" />
                         <div className="item-info">
                           <span className="item-name">Organic Tomatoes</span>
                           <span className="item-sub">Farmer: Sunita Sharma</span>

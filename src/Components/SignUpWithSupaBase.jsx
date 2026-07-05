@@ -17,6 +17,7 @@ import FormControlLabel from '@mui/material/FormControlLabel'
 import Paper from '@mui/material/Paper'
 import Swal from 'sweetalert2'
 import { SupaBase } from './createClient'
+import { getImgUrl } from './imgHelper'
 
 const theme = createTheme()
 
@@ -104,7 +105,7 @@ export default function SignUpSide() {
       className="main"
       maxWidth={false}
       maxHeight={false}
-      style={{ backgroundImage: `url("/images/women.jpg")`, height: '100%' }}
+      style={{ backgroundImage: `url(${getImgUrl('/images/women.jpg')})`, height: '100%' }}
     >
       <ThemeProvider theme={theme}>
         <Container component="main" maxWidth="xs">

@@ -13,6 +13,7 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { SupaBase } from "./createClient";
+import { getImgUrl } from "./imgHelper";
 import Swal from "sweetalert2";
 
 const theme = createTheme();
@@ -67,7 +68,7 @@ export default function SignInSide() {
           sm={4}
           md={7}
           sx={{
-            backgroundImage: "url(/images/login.jpg)",
+            backgroundImage: `url(${getImgUrl('/images/login.jpg')})`,
             backgroundRepeat: "no-repeat",
             backgroundColor: (t) =>
               t.palette.mode === "light"

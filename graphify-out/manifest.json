@@ -1,7 +1,7 @@
 {
   "package.json": {
-    "mtime": 1783167041.9010143,
-    "ast_hash": "1a14a868a7365cc2bae8a9beb131fd48",
+    "mtime": 1783258722.9240277,
+    "ast_hash": "41c0418d52805b887ab7764aeff1eaf4",
     "semantic_hash": ""
   },
   "public/locales/chi/translation.json": {
@@ -30,28 +30,28 @@
     "semantic_hash": ""
   },
   "src/Components/SignInWithSupaBase.jsx": {
-    "mtime": 1783163505.539346,
-    "ast_hash": "c37e6d37376f83aa9dffc58f554842a9",
+    "mtime": 1783259700.1910126,
+    "ast_hash": "1151ab7697e8bdc6782972d6bf7fd103",
     "semantic_hash": ""
   },
   "src/Components/SignUpWithSupaBase.jsx": {
-    "mtime": 1783162620.211015,
-    "ast_hash": "3e20c3907e0757c03f8c112a1f6ef6d6",
+    "mtime": 1783259744.9802506,
+    "ast_hash": "b01a528c77319a1c609acbe86fff68e8",
     "semantic_hash": ""
   },
   "src/Components/about.jsx": {
-    "mtime": 1783164367.8452368,
-    "ast_hash": "6155fc9683ddba16d7d932e210c8b155",
+    "mtime": 1783259685.1118436,
+    "ast_hash": "34863b833e6b27f9534d714072702e9f",
     "semantic_hash": ""
   },
   "src/Components/addCart.jsx": {
-    "mtime": 1783163450.7651165,
-    "ast_hash": "88b04c969db446bc71f9aff9c5d1e154",
+    "mtime": 1783259672.568478,
+    "ast_hash": "7441706eeda106e057d059b48a612894",
     "semantic_hash": ""
   },
   "src/Components/consumer.jsx": {
-    "mtime": 1783149482.3331833,
-    "ast_hash": "fc5b3246be6d1e96d365f9efab7c946b",
+    "mtime": 1783259697.5678203,
+    "ast_hash": "f37f351b56e5ed74d6e3c16781ad8107",
     "semantic_hash": ""
   },
   "src/Components/createClient.jsx": {
@@ -60,8 +60,8 @@
     "semantic_hash": ""
   },
   "src/Components/farmer.jsx": {
-    "mtime": 1783164365.6825967,
-    "ast_hash": "00d3087ccaa007e63ba39ebc839e7250",
+    "mtime": 1783259671.2586782,
+    "ast_hash": "a74b226e991085ba6023bf8022b846af",
     "semantic_hash": ""
   },
   "src/Components/forgetPassword.jsx": {
@@ -70,13 +70,13 @@
     "semantic_hash": ""
   },
   "src/Components/fruits.jsx": {
-    "mtime": 1783165987.7396085,
-    "ast_hash": "63cc48762bf719860cc179245d124bcd",
+    "mtime": 1783259655.4893548,
+    "ast_hash": "282ca89de9ec017c3e4c00f8aee97015",
     "semantic_hash": ""
   },
   "src/Components/grains.jsx": {
-    "mtime": 1783165986.436368,
-    "ast_hash": "5ba0b4dc8224b3d708c17ad283452af4",
+    "mtime": 1783259660.1327963,
+    "ast_hash": "d06e1496a15b77273499835085356698",
     "semantic_hash": ""
   },
   "src/Components/home.jsx": {
@@ -95,13 +95,13 @@
     "semantic_hash": ""
   },
   "src/Components/nuts.jsx": {
-    "mtime": 1783165988.572824,
-    "ast_hash": "1145b6409fbaa8e633b7f157e1312524",
+    "mtime": 1783259661.4395783,
+    "ast_hash": "1401d4e0d52ef19b04362ded94af3793",
     "semantic_hash": ""
   },
   "src/Components/payment.jsx": {
-    "mtime": 1783149791.6272943,
-    "ast_hash": "f9c2db9214872b97dcb6614bbe4c6952",
+    "mtime": 1783259698.9637098,
+    "ast_hash": "8773abcc92460fed5807b498a0244d29",
     "semantic_hash": ""
   },
   "src/Components/services.jsx": {
@@ -110,8 +110,8 @@
     "semantic_hash": ""
   },
   "src/Components/spices.jsx": {
-    "mtime": 1783165988.16166,
-    "ast_hash": "cb9ba823eebee68fbb79069677428e0d",
+    "mtime": 1783259661.4395783,
+    "ast_hash": "5136b046e1f2ff2b09f8fc06c2372e55",
     "semantic_hash": ""
   },
   "src/Components/updatePassword.jsx": {
@@ -120,8 +120,8 @@
     "semantic_hash": ""
   },
   "src/Components/vegetable.jsx": {
-    "mtime": 1783165987.02409,
-    "ast_hash": "490e42189c175fe635b899c702077b89",
+    "mtime": 1783259661.4454165,
+    "ast_hash": "2f28b0f8ef26c997be16f55508c86db2",
     "semantic_hash": ""
   },
   "src/Components/weather.jsx": {
@@ -572,6 +572,11 @@
   "public/404.html": {
     "mtime": 1783166724.43515,
     "ast_hash": "64c16bef8b36155518e483a2d0fa0ca2",
+    "semantic_hash": ""
+  },
+  "src/Components/imgHelper.js": {
+    "mtime": 1783259645.3045323,
+    "ast_hash": "f897b52b076de8e5ba203fdc4a907910",
     "semantic_hash": ""
   }
 }

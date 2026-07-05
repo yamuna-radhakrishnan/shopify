@@ -8,6 +8,7 @@ import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import Nothing from "./nothing";
 import { Link } from 'react-router-dom';
+import { getImgUrl } from './imgHelper';
 import "../Styles/addCart.css";
 import Swal from "sweetalert2";
 import PropTypes from 'prop-types';
@@ -70,7 +71,7 @@ const AddCart = ({ cart, setCart, handleChange }) => {
             }}
           >
             <img
-              src={ele.img_url || ele.image_url || ele.image || ''}
+              src={getImgUrl(ele.img_url || ele.image_url || ele.image || '')}
               alt={ele.name}
               loading="lazy"
               width="300"

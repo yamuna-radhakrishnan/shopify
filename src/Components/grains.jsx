@@ -5,6 +5,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import Swal from 'sweetalert2';
 import PropTypes from 'prop-types';
 import { SupaBase } from './createClient';
+import { getImgUrl } from './imgHelper';
 import '../Styles/web.css';
 
 const SkeletonCard = () => (
@@ -45,7 +46,7 @@ const Grains = ({ handleClick }) => {
     getData();
   }, []);
 
-  const imgOf = (ele) => ele.img_url || ele.image_url || ele.image || '';
+  const imgOf = (ele) => getImgUrl(ele.img_url || ele.image_url || ele.image || '');
 
   return (
     <main id="main-content" className="product-page-container">

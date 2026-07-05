@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Card, CardContent, CardMedia, Typography, Grid } from '@mui/material';
 import { SupaBase } from './createClient';
+import { getImgUrl } from './imgHelper';
 
 const Farmer = () => {
   const [data, setData] = useState([]);
@@ -52,7 +53,7 @@ const Farmer = () => {
                 <CardMedia
                   component="img"
                   height="194"
-                  image={item.img_url || ''}
+                  image={getImgUrl(item.img_url || '')}
                   alt={item.name}
                   sx={{ objectFit: 'cover' }}
                 />

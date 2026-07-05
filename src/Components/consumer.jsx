@@ -1,36 +1,37 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { getImgUrl } from './imgHelper';
 import '../Styles/web.css';
 
 const categories = [
   {
     title: 'Grains',
-    img: '/images/grains.jpeg',
+    img: getImgUrl('/images/grains.jpeg'),
     desc: 'Rice, wheat, corn and more — straight from the field to your pantry.',
     to: '/grains',
   },
   {
     title: 'Vegetables',
-    img: '/images/vegetables.jpg',
+    img: getImgUrl('/images/vegetables.jpg'),
     desc: 'Farm-fresh vegetables picked at peak ripeness — no middlemen.',
     to: '/vegetables',
   },
   {
     title: 'Fruits',
-    img: '/images/fruits.jpg',
+    img: getImgUrl('/images/fruits.jpg'),
     desc: 'Seasonal fruits, naturally ripened and sourced directly from orchards.',
     to: '/fruits',
   },
   {
     title: 'Spices',
-    img: '/images/spices.jpeg',
+    img: getImgUrl('/images/spices.jpeg'),
     desc: 'Authentic Indian spices with bold flavour and full aroma.',
     to: '/spices',
   },
   {
     title: 'Nuts',
-    img: '/images/nuts.jpg',
+    img: getImgUrl('/images/nuts.jpg'),
     desc: 'Protein-rich nuts and dry fruits — naturally sourced and chemical-free.',
     to: '/nuts',
   },

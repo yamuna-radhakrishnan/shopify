@@ -1,16 +1,16 @@
 # Graph Report - FARM_BUDDY_NEW_EDITION  (2026-07-05)
 
 ## Corpus Check
-- 38 files · ~1,707,563 words
+- 39 files · ~1,707,684 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 123 nodes · 159 edges · 13 communities (12 shown, 1 thin omitted)
+- 128 nodes · 198 edges · 18 communities (12 shown, 6 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `133d8f98`
+- Built from commit: `610f1686`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -25,50 +25,64 @@
 - [[_COMMUNITY_Community 7|Community 7]]
 - [[_COMMUNITY_Community 8|Community 8]]
 - [[_COMMUNITY_Community 9|Community 9]]
+- [[_COMMUNITY_Community 10|Community 10]]
+- [[_COMMUNITY_Community 11|Community 11]]
+- [[_COMMUNITY_Community 12|Community 12]]
+- [[_COMMUNITY_Community 13|Community 13]]
+- [[_COMMUNITY_Community 14|Community 14]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `SupaBase` - 11 edges
-2. `scripts` - 6 edges
-3. `FarmBuddy` - 6 edges
-4. `main()` - 3 edges
-5. `Navbar()` - 3 edges
-6. `seedTable()` - 2 edges
-7. `seedFarmerProducts()` - 2 edges
-8. `App()` - 2 edges
-9. `SignInSide()` - 2 edges
-10. `SignUpSide()` - 2 edges
+1. `getImgUrl()` - 24 edges
+2. `SupaBase` - 11 edges
+3. `scripts` - 8 edges
+4. `FarmBuddy` - 6 edges
+5. `main()` - 3 edges
+6. `SignInSide()` - 3 edges
+7. `SignUpSide()` - 3 edges
+8. `About()` - 3 edges
+9. `AddCart()` - 3 edges
+10. `Farmer()` - 3 edges
 
 ## Surprising Connections (you probably didn't know these)
-- None detected - all connections are within the same source files.
+- `SignInSide()` --calls--> `getImgUrl()`  [EXTRACTED]
+  src/Components/SignInWithSupaBase.jsx → src/Components/imgHelper.js
+- `SignUpSide()` --calls--> `getImgUrl()`  [EXTRACTED]
+  src/Components/SignUpWithSupaBase.jsx → src/Components/imgHelper.js
+- `AddCart()` --calls--> `getImgUrl()`  [EXTRACTED]
+  src/Components/addCart.jsx → src/Components/imgHelper.js
+- `Fruits()` --calls--> `getImgUrl()`  [EXTRACTED]
+  src/Components/fruits.jsx → src/Components/imgHelper.js
+- `Grains()` --calls--> `getImgUrl()`  [EXTRACTED]
+  src/Components/grains.jsx → src/Components/imgHelper.js
 
 ## Import Cycles
 - None detected.
 
-## Communities (13 total, 1 thin omitted)
+## Communities (18 total, 6 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.14
 Nodes (14): dependencies, axios, @emotion/react, @emotion/styled, @fortawesome/fontawesome-svg-core, @fortawesome/free-solid-svg-icons, @fortawesome/react-fontawesome, @mui/icons-material (+6 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.12
-Nodes (12): About(), Farmer(), featureItems, Home(), Payment(), centralLoanLinks, loanLinks, Services() (+4 more)
+Cohesion: 0.13
+Nodes (13): AddCart(), categories, Consumer(), featureItems, Home(), Navbar(), theme, Nothing() (+5 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.12
-Nodes (11): SupaBase, defaultTheme, SignIn(), Fruits(), Nuts(), SignInSide(), theme, theme (+3 more)
+Cohesion: 0.31
+Nodes (5): SupaBase, defaultTheme, SignIn(), defaultTheme, UpdatePassword()
 
 ### Community 3 - "Community 3"
-Cohesion: 0.24
-Nodes (6): AddCart(), categories, Consumer(), Navbar(), theme, Nothing()
+Cohesion: 0.33
+Nodes (5): About(), Farmer(), getImgUrl(), Nuts(), Payment()
 
 ### Community 4 - "Community 4"
-Cohesion: 0.17
-Nodes (11): homepage, name, private, scripts, build, dev, lint, preview (+3 more)
+Cohesion: 0.14
+Nodes (13): homepage, name, private, scripts, build, deploy, dev, lint (+5 more)
 
 ### Community 5 - "Community 5"
-Cohesion: 0.22
-Nodes (9): devDependencies, eslint, eslint-plugin-react, eslint-plugin-react-hooks, eslint-plugin-react-refresh, @types/react, @types/react-dom, vite (+1 more)
+Cohesion: 0.20
+Nodes (10): devDependencies, eslint, eslint-plugin-react, eslint-plugin-react-hooks, eslint-plugin-react-refresh, gh-pages, @types/react, @types/react-dom (+2 more)
 
 ### Community 6 - "Community 6"
 Cohesion: 0.22
@@ -83,22 +97,22 @@ Cohesion: 0.24
 Nodes (9): __dirname, envContent, envPath, envVars, main(), SEED_FILES, seedFarmerProducts(), seedTable() (+1 more)
 
 ## Knowledge Gaps
-- **59 isolated node(s):** `homepage`, `name`, `private`, `version`, `type` (+54 more)
+- **62 isolated node(s):** `homepage`, `name`, `private`, `version`, `type` (+57 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `dependencies` connect `Community 0` to `Community 4`?**
-  _High betweenness centrality (0.048) - this node is a cross-community bridge._
+  _High betweenness centrality (0.049) - this node is a cross-community bridge._
 - **Why does `devDependencies` connect `Community 5` to `Community 4`?**
-  _High betweenness centrality (0.032) - this node is a cross-community bridge._
+  _High betweenness centrality (0.036) - this node is a cross-community bridge._
 - **What connects `homepage`, `name`, `private` to the rest of the system?**
-  _59 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _62 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.14285714285714285 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.12121212121212122 - nodes in this community are weakly interconnected._
-- **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.11857707509881422 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.13043478260869565 - nodes in this community are weakly interconnected._
+- **Should `Community 4` be split into smaller, more focused modules?**
+  _Cohesion score 0.14285714285714285 - nodes in this community are weakly interconnected._

@@ -5,6 +5,7 @@ import MenuItem from '@mui/material/MenuItem';
 import ListSubheader from '@mui/material/ListSubheader';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import { getImgUrl } from './imgHelper';
 import '../Styles/web.css';
 
 const Payment = () => {
@@ -90,7 +91,7 @@ const Payment = () => {
           sm={false}
           md={7}
           sx={{
-            backgroundImage: 'url(images/paymentbg.jpg)',
+            backgroundImage: `url(${getImgUrl('/images/paymentbg.jpg')})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
