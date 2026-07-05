@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Home from "./Components/home";
 import Services from "./Components/services";
-import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import { createHashRouter, Outlet, RouterProvider } from "react-router-dom";
 import Navbar from "./Components/navbar";
 import Consumer from "./Components/consumer";
 import About from "./Components/about";
@@ -19,7 +19,7 @@ import Weather from "./Components/weather";
 import Farmer from "./Components/farmer";
 import ForgetPassword from "./Components/forgetPassword";
 import UpdatePassword from "./Components/updatePassword";
-import Translate from "./Components/translate";
+
 
 const App = () => {
   const [cart, setCart] = useState([]);
@@ -42,13 +42,12 @@ const App = () => {
     // cart updated
   }, [cart]);
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "/",
       element: (
         <>
           <Navbar>
-            <Translate />
           </Navbar>
           <Outlet />
         </>

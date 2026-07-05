@@ -14,10 +14,20 @@
       "norm_label": "package.json"
     },
     {
-      "label": "name",
+      "label": "homepage",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L2",
+      "_origin": "ast",
+      "id": "package_homepage",
+      "community": 4,
+      "norm_label": "homepage"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
       "_origin": "ast",
       "id": "package_name",
       "community": 4,
@@ -27,7 +37,7 @@
       "label": "private",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L3",
+      "source_location": "L4",
       "_origin": "ast",
       "id": "package_private",
       "community": 4,
@@ -37,7 +47,7 @@
       "label": "version",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L4",
+      "source_location": "L5",
       "_origin": "ast",
       "id": "package_version",
       "community": 4,
@@ -47,7 +57,7 @@
       "label": "type",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L5",
+      "source_location": "L6",
       "_origin": "ast",
       "id": "package_type",
       "community": 4,
@@ -57,7 +67,7 @@
       "label": "scripts",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L6",
+      "source_location": "L7",
       "_origin": "ast",
       "id": "package_scripts",
       "community": 4,
@@ -67,7 +77,7 @@
       "label": "dev",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L7",
+      "source_location": "L8",
       "_origin": "ast",
       "id": "package_scripts_dev",
       "community": 4,
@@ -77,7 +87,7 @@
       "label": "build",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L8",
+      "source_location": "L9",
       "_origin": "ast",
       "id": "package_scripts_build",
       "community": 4,
@@ -87,7 +97,7 @@
       "label": "lint",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L9",
+      "source_location": "L10",
       "_origin": "ast",
       "id": "package_scripts_lint",
       "community": 4,
@@ -97,17 +107,27 @@
       "label": "preview",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L10",
+      "source_location": "L11",
       "_origin": "ast",
       "id": "package_scripts_preview",
       "community": 4,
       "norm_label": "preview"
     },
     {
-      "label": "dependencies",
+      "label": "seed",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L12",
+      "_origin": "ast",
+      "id": "package_scripts_seed",
+      "community": 4,
+      "norm_label": "seed"
+    },
+    {
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L14",
       "_origin": "ast",
       "id": "package_dependencies",
       "community": 0,
@@ -117,27 +137,17 @@
       "label": "@emotion/react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L13",
+      "source_location": "L15",
       "_origin": "ast",
       "id": "package_dependencies_emotion_react",
       "community": 0,
       "norm_label": "@emotion/react"
     },
     {
-      "label": "@emotion/style",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L14",
-      "_origin": "ast",
-      "id": "package_dependencies_emotion_style",
-      "community": 0,
-      "norm_label": "@emotion/style"
-    },
-    {
       "label": "@emotion/styled",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L15",
+      "source_location": "L16",
       "_origin": "ast",
       "id": "package_dependencies_emotion_styled",
       "community": 0,
@@ -147,7 +157,7 @@
       "label": "@fortawesome/fontawesome-svg-core",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L16",
+      "source_location": "L17",
       "_origin": "ast",
       "id": "package_dependencies_fortawesome_fontawesome_svg_core",
       "community": 0,
@@ -157,7 +167,7 @@
       "label": "@fortawesome/free-solid-svg-icons",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L17",
+      "source_location": "L18",
       "_origin": "ast",
       "id": "package_dependencies_fortawesome_free_solid_svg_icons",
       "community": 0,
@@ -167,7 +177,7 @@
       "label": "@fortawesome/react-fontawesome",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L18",
+      "source_location": "L19",
       "_origin": "ast",
       "id": "package_dependencies_fortawesome_react_fontawesome",
       "community": 0,
@@ -177,7 +187,7 @@
       "label": "@mui/icons-material",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L19",
+      "source_location": "L20",
       "_origin": "ast",
       "id": "package_dependencies_mui_icons_material",
       "community": 0,
@@ -187,21 +197,11 @@
       "label": "@mui/material",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L20",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "package_dependencies_mui_material",
       "community": 0,
       "norm_label": "@mui/material"
-    },
-    {
-      "label": "@mui/styles",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L21",
-      "_origin": "ast",
-      "id": "package_dependencies_mui_styles",
-      "community": 0,
-      "norm_label": "@mui/styles"
     },
     {
       "label": "@supabase/supabase-js",
@@ -224,20 +224,10 @@
       "norm_label": "axios"
     },
     {
-      "label": "pocketbase",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L24",
-      "_origin": "ast",
-      "id": "package_dependencies_pocketbase",
-      "community": 0,
-      "norm_label": "pocketbase"
-    },
-    {
       "label": "react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L25",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "package_dependencies_react",
       "community": 0,
@@ -247,7 +237,7 @@
       "label": "react-dom",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L26",
+      "source_location": "L25",
       "_origin": "ast",
       "id": "package_dependencies_react_dom",
       "community": 0,
@@ -257,7 +247,7 @@
       "label": "react-router-dom",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L27",
+      "source_location": "L26",
       "_origin": "ast",
       "id": "package_dependencies_react_router_dom",
       "community": 0,
@@ -267,7 +257,7 @@
       "label": "sweetalert2",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L28",
+      "source_location": "L27",
       "_origin": "ast",
       "id": "package_dependencies_sweetalert2",
       "community": 0,
@@ -277,7 +267,7 @@
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L30",
+      "source_location": "L29",
       "_origin": "ast",
       "id": "package_devdependencies",
       "community": 5,
@@ -287,7 +277,7 @@
       "label": "@types/react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L30",
       "_origin": "ast",
       "id": "package_devdependencies_types_react",
       "community": 5,
@@ -297,7 +287,7 @@
       "label": "@types/react-dom",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L32",
+      "source_location": "L31",
       "_origin": "ast",
       "id": "package_devdependencies_types_react_dom",
       "community": 5,
@@ -307,7 +297,7 @@
       "label": "@vitejs/plugin-react-swc",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L33",
+      "source_location": "L32",
       "_origin": "ast",
       "id": "package_devdependencies_vitejs_plugin_react_swc",
       "community": 5,
@@ -317,7 +307,7 @@
       "label": "eslint",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L34",
+      "source_location": "L33",
       "_origin": "ast",
       "id": "package_devdependencies_eslint",
       "community": 5,
@@ -327,7 +317,7 @@
       "label": "eslint-plugin-react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L35",
+      "source_location": "L34",
       "_origin": "ast",
       "id": "package_devdependencies_eslint_plugin_react",
       "community": 5,
@@ -337,7 +327,7 @@
       "label": "eslint-plugin-react-hooks",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L36",
+      "source_location": "L35",
       "_origin": "ast",
       "id": "package_devdependencies_eslint_plugin_react_hooks",
       "community": 5,
@@ -347,7 +337,7 @@
       "label": "eslint-plugin-react-refresh",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L37",
+      "source_location": "L36",
       "_origin": "ast",
       "id": "package_devdependencies_eslint_plugin_react_refresh",
       "community": 5,
@@ -357,7 +347,7 @@
       "label": "vite",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L38",
+      "source_location": "L37",
       "_origin": "ast",
       "id": "package_devdependencies_vite",
       "community": 5,
@@ -444,6 +434,106 @@
       "norm_label": "background_color"
     },
     {
+      "label": "seed-supabase.js",
+      "file_type": "code",
+      "source_file": "scripts/seed-supabase.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_seed_supabase",
+      "community": 8,
+      "norm_label": "seed-supabase.js"
+    },
+    {
+      "label": "__dirname",
+      "file_type": "code",
+      "source_file": "scripts/seed-supabase.js",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "scripts_seed_supabase_dirname",
+      "community": 8,
+      "norm_label": "__dirname"
+    },
+    {
+      "label": "envPath",
+      "file_type": "code",
+      "source_file": "scripts/seed-supabase.js",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "scripts_seed_supabase_envpath",
+      "community": 8,
+      "norm_label": "envpath"
+    },
+    {
+      "label": "envContent",
+      "file_type": "code",
+      "source_file": "scripts/seed-supabase.js",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "scripts_seed_supabase_envcontent",
+      "community": 8,
+      "norm_label": "envcontent"
+    },
+    {
+      "label": "envVars",
+      "file_type": "code",
+      "source_file": "scripts/seed-supabase.js",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "scripts_seed_supabase_envvars",
+      "community": 8,
+      "norm_label": "envvars"
+    },
+    {
+      "label": "supabase",
+      "file_type": "code",
+      "source_file": "scripts/seed-supabase.js",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "scripts_seed_supabase_supabase",
+      "community": 8,
+      "norm_label": "supabase"
+    },
+    {
+      "label": "SEED_FILES",
+      "file_type": "code",
+      "source_file": "scripts/seed-supabase.js",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "scripts_seed_supabase_seed_files",
+      "community": 8,
+      "norm_label": "seed_files"
+    },
+    {
+      "label": "seedTable()",
+      "file_type": "code",
+      "source_file": "scripts/seed-supabase.js",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "scripts_seed_supabase_seedtable",
+      "community": 8,
+      "norm_label": "seedtable()"
+    },
+    {
+      "label": "seedFarmerProducts()",
+      "file_type": "code",
+      "source_file": "scripts/seed-supabase.js",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "scripts_seed_supabase_seedfarmerproducts",
+      "community": 8,
+      "norm_label": "seedfarmerproducts()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/seed-supabase.js",
+      "source_location": "L90",
+      "_origin": "ast",
+      "id": "scripts_seed_supabase_main",
+      "community": 8,
+      "norm_label": "main()"
+    },
+    {
       "label": "App.jsx",
       "file_type": "code",
       "source_file": "src/App.jsx",
@@ -460,7 +550,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "src_app_app",
-      "community": 14,
+      "community": 1,
       "norm_label": "app()"
     },
     {
@@ -470,7 +560,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_signinwithsupabase",
-      "community": 9,
+      "community": 2,
       "norm_label": "signinwithsupabase.jsx"
     },
     {
@@ -480,7 +570,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "components_signinwithsupabase_theme",
-      "community": 9,
+      "community": 2,
       "norm_label": "theme"
     },
     {
@@ -490,38 +580,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "components_signinwithsupabase_signinside",
-      "community": 9,
+      "community": 2,
       "norm_label": "signinside()"
-    },
-    {
-      "label": "SignUpSide.jsx",
-      "file_type": "code",
-      "source_file": "src/Components/SignUpSide.jsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "components_signupside",
-      "community": 10,
-      "norm_label": "signupside.jsx"
-    },
-    {
-      "label": "theme",
-      "file_type": "code",
-      "source_file": "src/Components/SignUpSide.jsx",
-      "source_location": "L22",
-      "_origin": "ast",
-      "id": "components_signupside_theme",
-      "community": 10,
-      "norm_label": "theme"
-    },
-    {
-      "label": "SignUpSide()",
-      "file_type": "code",
-      "source_file": "src/Components/SignUpSide.jsx",
-      "source_location": "L24",
-      "_origin": "ast",
-      "id": "components_signupside_signupside",
-      "community": 10,
-      "norm_label": "signupside()"
     },
     {
       "label": "SignUpWithSupaBase.jsx",
@@ -530,7 +590,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_signupwithsupabase",
-      "community": 11,
+      "community": 2,
       "norm_label": "signupwithsupabase.jsx"
     },
     {
@@ -540,7 +600,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "components_signupwithsupabase_theme",
-      "community": 11,
+      "community": 2,
       "norm_label": "theme"
     },
     {
@@ -550,38 +610,8 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "components_signupwithsupabase_signupside",
-      "community": 11,
+      "community": 1,
       "norm_label": "signupside()"
-    },
-    {
-      "label": "SigninSide.jsx",
-      "file_type": "code",
-      "source_file": "src/Components/SigninSide.jsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "components_signinside",
-      "community": 8,
-      "norm_label": "signinside.jsx"
-    },
-    {
-      "label": "theme",
-      "file_type": "code",
-      "source_file": "src/Components/SigninSide.jsx",
-      "source_location": "L19",
-      "_origin": "ast",
-      "id": "components_signinside_theme",
-      "community": 8,
-      "norm_label": "theme"
-    },
-    {
-      "label": "SignInSide()",
-      "file_type": "code",
-      "source_file": "src/Components/SigninSide.jsx",
-      "source_location": "L21",
-      "_origin": "ast",
-      "id": "components_signinside_signinside",
-      "community": 8,
-      "norm_label": "signinside()"
     },
     {
       "label": "about.jsx",
@@ -597,7 +627,7 @@
       "label": "About()",
       "file_type": "code",
       "source_file": "src/Components/about.jsx",
-      "source_location": "L6",
+      "source_location": "L7",
       "_origin": "ast",
       "id": "components_about_about",
       "community": 1,
@@ -617,7 +647,7 @@
       "label": "AddCart()",
       "file_type": "code",
       "source_file": "src/Components/addCart.jsx",
-      "source_location": "L19",
+      "source_location": "L16",
       "_origin": "ast",
       "id": "components_addcart_addcart",
       "community": 3,
@@ -634,20 +664,20 @@
       "norm_label": "consumer.jsx"
     },
     {
-      "label": "useStyles",
+      "label": "categories",
       "file_type": "code",
       "source_file": "src/Components/consumer.jsx",
-      "source_location": "L12",
+      "source_location": "L6",
       "_origin": "ast",
-      "id": "components_consumer_usestyles",
+      "id": "components_consumer_categories",
       "community": 3,
-      "norm_label": "usestyles"
+      "norm_label": "categories"
     },
     {
       "label": "Consumer()",
       "file_type": "code",
       "source_file": "src/Components/consumer.jsx",
-      "source_location": "L23",
+      "source_location": "L39",
       "_origin": "ast",
       "id": "components_consumer_consumer",
       "community": 3,
@@ -667,7 +697,7 @@
       "label": "SupaBase",
       "file_type": "code",
       "source_file": "src/Components/createClient.jsx",
-      "source_location": "L3",
+      "source_location": "L6",
       "_origin": "ast",
       "id": "components_createclient_supabase",
       "community": 2,
@@ -680,7 +710,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_farmer",
-      "community": 1,
+      "community": 2,
       "norm_label": "farmer.jsx"
     },
     {
@@ -734,13 +764,23 @@
       "norm_label": "fruits.jsx"
     },
     {
+      "label": "SkeletonCard()",
+      "file_type": "code",
+      "source_file": "src/Components/fruits.jsx",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "components_fruits_skeletoncard",
+      "community": 2,
+      "norm_label": "skeletoncard()"
+    },
+    {
       "label": "Fruits()",
       "file_type": "code",
       "source_file": "src/Components/fruits.jsx",
-      "source_location": "L15",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "components_fruits_fruits",
-      "community": 1,
+      "community": 2,
       "norm_label": "fruits()"
     },
     {
@@ -750,17 +790,27 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_grains",
-      "community": 2,
+      "community": 9,
       "norm_label": "grains.jsx"
+    },
+    {
+      "label": "SkeletonCard()",
+      "file_type": "code",
+      "source_file": "src/Components/grains.jsx",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "components_grains_skeletoncard",
+      "community": 9,
+      "norm_label": "skeletoncard()"
     },
     {
       "label": "Grains()",
       "file_type": "code",
       "source_file": "src/Components/grains.jsx",
-      "source_location": "L15",
+      "source_location": "L30",
       "_origin": "ast",
       "id": "components_grains_grains",
-      "community": 2,
+      "community": 9,
       "norm_label": "grains()"
     },
     {
@@ -774,10 +824,20 @@
       "norm_label": "home.jsx"
     },
     {
+      "label": "featureItems",
+      "file_type": "code",
+      "source_file": "src/Components/home.jsx",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "components_home_featureitems",
+      "community": 1,
+      "norm_label": "featureitems"
+    },
+    {
       "label": "Home()",
       "file_type": "code",
       "source_file": "src/Components/home.jsx",
-      "source_location": "L7",
+      "source_location": "L42",
       "_origin": "ast",
       "id": "components_home_home",
       "community": 1,
@@ -797,7 +857,7 @@
       "label": "theme",
       "file_type": "code",
       "source_file": "src/Components/navbar.jsx",
-      "source_location": "L23",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "components_navbar_theme",
       "community": 3,
@@ -807,7 +867,7 @@
       "label": "Navbar()",
       "file_type": "code",
       "source_file": "src/Components/navbar.jsx",
-      "source_location": "L36",
+      "source_location": "L38",
       "_origin": "ast",
       "id": "components_navbar_navbar",
       "community": 3,
@@ -827,7 +887,7 @@
       "label": "Nothing()",
       "file_type": "code",
       "source_file": "src/Components/nothing.jsx",
-      "source_location": "L7",
+      "source_location": "L4",
       "_origin": "ast",
       "id": "components_nothing_nothing",
       "community": 3,
@@ -844,10 +904,20 @@
       "norm_label": "nuts.jsx"
     },
     {
+      "label": "SkeletonCard()",
+      "file_type": "code",
+      "source_file": "src/Components/nuts.jsx",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "components_nuts_skeletoncard",
+      "community": 2,
+      "norm_label": "skeletoncard()"
+    },
+    {
       "label": "Nuts()",
       "file_type": "code",
       "source_file": "src/Components/nuts.jsx",
-      "source_location": "L15",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "components_nuts_nuts",
       "community": 2,
@@ -860,7 +930,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_payment",
-      "community": 13,
+      "community": 1,
       "norm_label": "payment.jsx"
     },
     {
@@ -870,7 +940,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "components_payment_payment",
-      "community": 13,
+      "community": 1,
       "norm_label": "payment()"
     },
     {
@@ -884,10 +954,30 @@
       "norm_label": "services.jsx"
     },
     {
+      "label": "loanLinks",
+      "file_type": "code",
+      "source_file": "src/Components/services.jsx",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "components_services_loanlinks",
+      "community": 1,
+      "norm_label": "loanlinks"
+    },
+    {
+      "label": "centralLoanLinks",
+      "file_type": "code",
+      "source_file": "src/Components/services.jsx",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "components_services_centralloanlinks",
+      "community": 1,
+      "norm_label": "centralloanlinks"
+    },
+    {
       "label": "Services()",
       "file_type": "code",
       "source_file": "src/Components/services.jsx",
-      "source_location": "L6",
+      "source_location": "L16",
       "_origin": "ast",
       "id": "components_services_services",
       "community": 1,
@@ -904,34 +994,24 @@
       "norm_label": "spices.jsx"
     },
     {
+      "label": "SkeletonCard()",
+      "file_type": "code",
+      "source_file": "src/Components/spices.jsx",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "components_spices_skeletoncard",
+      "community": 2,
+      "norm_label": "skeletoncard()"
+    },
+    {
       "label": "Spices()",
       "file_type": "code",
       "source_file": "src/Components/spices.jsx",
-      "source_location": "L15",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "components_spices_spices",
       "community": 2,
       "norm_label": "spices()"
-    },
-    {
-      "label": "translate.jsx",
-      "file_type": "code",
-      "source_file": "src/Components/translate.jsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "components_translate",
-      "community": 1,
-      "norm_label": "translate.jsx"
-    },
-    {
-      "label": "Translate()",
-      "file_type": "code",
-      "source_file": "src/Components/translate.jsx",
-      "source_location": "L4",
-      "_origin": "ast",
-      "id": "components_translate_translate",
-      "community": 1,
-      "norm_label": "translate()"
     },
     {
       "label": "updatePassword.jsx",
@@ -940,7 +1020,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_updatepassword",
-      "community": 12,
+      "community": 2,
       "norm_label": "updatepassword.jsx"
     },
     {
@@ -950,7 +1030,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "components_updatepassword_defaulttheme",
-      "community": 12,
+      "community": 2,
       "norm_label": "defaulttheme"
     },
     {
@@ -960,7 +1040,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "components_updatepassword_updatepassword",
-      "community": 12,
+      "community": 2,
       "norm_label": "updatepassword()"
     },
     {
@@ -970,17 +1050,27 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_vegetable",
-      "community": 2,
+      "community": 1,
       "norm_label": "vegetable.jsx"
+    },
+    {
+      "label": "SkeletonCard()",
+      "file_type": "code",
+      "source_file": "src/Components/vegetable.jsx",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "components_vegetable_skeletoncard",
+      "community": 1,
+      "norm_label": "skeletoncard()"
     },
     {
       "label": "Vegetables()",
       "file_type": "code",
       "source_file": "src/Components/vegetable.jsx",
-      "source_location": "L15",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "components_vegetable_vegetables",
-      "community": 2,
+      "community": 1,
       "norm_label": "vegetables()"
     },
     {
@@ -994,10 +1084,20 @@
       "norm_label": "weather.jsx"
     },
     {
+      "label": "WeatherStat()",
+      "file_type": "code",
+      "source_file": "src/Components/weather.jsx",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "components_weather_weatherstat",
+      "community": 1,
+      "norm_label": "weatherstat()"
+    },
+    {
       "label": "Weather()",
       "file_type": "code",
       "source_file": "src/Components/weather.jsx",
-      "source_location": "L9",
+      "source_location": "L15",
       "_origin": "ast",
       "id": "components_weather_weather",
       "community": 1,
@@ -1010,7 +1110,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_main",
-      "community": 14,
+      "community": 1,
       "norm_label": "main.jsx"
     },
     {
@@ -1141,9 +1241,9 @@
       "source_file": "package.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_dependencies",
-      "confidence_score": 1.0
+      "target": "package_dependencies"
     },
     {
       "relation": "contains",
@@ -1151,9 +1251,9 @@
       "source_file": "package.json",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_devdependencies",
-      "confidence_score": 1.0
+      "target": "package_devdependencies"
     },
     {
       "relation": "contains",
@@ -1162,8 +1262,18 @@
       "source_location": "L2",
       "weight": 1.0,
       "source": "package",
-      "target": "package_name",
+      "target": "package_homepage",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "package",
+      "target": "package_name"
     },
     {
       "relation": "contains",
@@ -1171,9 +1281,9 @@
       "source_file": "package.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_private",
-      "confidence_score": 1.0
+      "target": "package_private"
     },
     {
       "relation": "contains",
@@ -1181,9 +1291,9 @@
       "source_file": "package.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_scripts",
-      "confidence_score": 1.0
+      "target": "package_scripts"
     },
     {
       "relation": "contains",
@@ -1191,9 +1301,9 @@
       "source_file": "package.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_type",
-      "confidence_score": 1.0
+      "target": "package_type"
     },
     {
       "relation": "contains",
@@ -1201,9 +1311,9 @@
       "source_file": "package.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_version",
-      "confidence_score": 1.0
+      "target": "package_version"
     },
     {
       "relation": "contains",
@@ -1211,9 +1321,9 @@
       "source_file": "package.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_build",
-      "confidence_score": 1.0
+      "target": "package_scripts_build"
     },
     {
       "relation": "contains",
@@ -1221,9 +1331,9 @@
       "source_file": "package.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_dev",
-      "confidence_score": 1.0
+      "target": "package_scripts_dev"
     },
     {
       "relation": "contains",
@@ -1231,9 +1341,9 @@
       "source_file": "package.json",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_lint",
-      "confidence_score": 1.0
+      "target": "package_scripts_lint"
     },
     {
       "relation": "contains",
@@ -1241,8 +1351,18 @@
       "source_file": "package.json",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_preview",
+      "target": "package_scripts_preview"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_seed",
       "confidence_score": 1.0
     },
     {
@@ -1251,9 +1371,9 @@
       "source_file": "package.json",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_axios",
-      "confidence_score": 1.0
+      "target": "package_dependencies_axios"
     },
     {
       "relation": "contains",
@@ -1261,19 +1381,9 @@
       "source_file": "package.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_emotion_react",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L14",
-      "weight": 1.0,
-      "source": "package_dependencies",
-      "target": "package_dependencies_emotion_style",
-      "confidence_score": 1.0
+      "target": "package_dependencies_emotion_react"
     },
     {
       "relation": "contains",
@@ -1281,9 +1391,9 @@
       "source_file": "package.json",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_emotion_styled",
-      "confidence_score": 1.0
+      "target": "package_dependencies_emotion_styled"
     },
     {
       "relation": "contains",
@@ -1291,9 +1401,9 @@
       "source_file": "package.json",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_fortawesome_fontawesome_svg_core",
-      "confidence_score": 1.0
+      "target": "package_dependencies_fortawesome_fontawesome_svg_core"
     },
     {
       "relation": "contains",
@@ -1301,9 +1411,9 @@
       "source_file": "package.json",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_fortawesome_free_solid_svg_icons",
-      "confidence_score": 1.0
+      "target": "package_dependencies_fortawesome_free_solid_svg_icons"
     },
     {
       "relation": "contains",
@@ -1311,9 +1421,9 @@
       "source_file": "package.json",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_fortawesome_react_fontawesome",
-      "confidence_score": 1.0
+      "target": "package_dependencies_fortawesome_react_fontawesome"
     },
     {
       "relation": "contains",
@@ -1321,9 +1431,9 @@
       "source_file": "package.json",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_mui_icons_material",
-      "confidence_score": 1.0
+      "target": "package_dependencies_mui_icons_material"
     },
     {
       "relation": "contains",
@@ -1331,29 +1441,9 @@
       "source_file": "package.json",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_mui_material",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L21",
-      "weight": 1.0,
-      "source": "package_dependencies",
-      "target": "package_dependencies_mui_styles",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L24",
-      "weight": 1.0,
-      "source": "package_dependencies",
-      "target": "package_dependencies_pocketbase",
-      "confidence_score": 1.0
+      "target": "package_dependencies_mui_material"
     },
     {
       "relation": "contains",
@@ -1361,9 +1451,9 @@
       "source_file": "package.json",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_react",
-      "confidence_score": 1.0
+      "target": "package_dependencies_react"
     },
     {
       "relation": "contains",
@@ -1371,9 +1461,9 @@
       "source_file": "package.json",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_react_dom",
-      "confidence_score": 1.0
+      "target": "package_dependencies_react_dom"
     },
     {
       "relation": "contains",
@@ -1381,9 +1471,9 @@
       "source_file": "package.json",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_react_router_dom",
-      "confidence_score": 1.0
+      "target": "package_dependencies_react_router_dom"
     },
     {
       "relation": "contains",
@@ -1391,9 +1481,9 @@
       "source_file": "package.json",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_supabase_supabase_js",
-      "confidence_score": 1.0
+      "target": "package_dependencies_supabase_supabase_js"
     },
     {
       "relation": "contains",
@@ -1401,9 +1491,9 @@
       "source_file": "package.json",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_sweetalert2",
-      "confidence_score": 1.0
+      "target": "package_dependencies_sweetalert2"
     },
     {
       "relation": "contains",
@@ -1411,9 +1501,9 @@
       "source_file": "package.json",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_eslint",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_eslint"
     },
     {
       "relation": "contains",
@@ -1421,9 +1511,9 @@
       "source_file": "package.json",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_eslint_plugin_react",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_eslint_plugin_react"
     },
     {
       "relation": "contains",
@@ -1431,9 +1521,9 @@
       "source_file": "package.json",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_eslint_plugin_react_hooks",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_eslint_plugin_react_hooks"
     },
     {
       "relation": "contains",
@@ -1441,9 +1531,9 @@
       "source_file": "package.json",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_eslint_plugin_react_refresh",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_eslint_plugin_react_refresh"
     },
     {
       "relation": "contains",
@@ -1451,9 +1541,9 @@
       "source_file": "package.json",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_types_react",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_types_react"
     },
     {
       "relation": "contains",
@@ -1461,9 +1551,9 @@
       "source_file": "package.json",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_types_react_dom",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_types_react_dom"
     },
     {
       "relation": "contains",
@@ -1471,9 +1561,9 @@
       "source_file": "package.json",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_vite",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_vite"
     },
     {
       "relation": "contains",
@@ -1481,9 +1571,9 @@
       "source_file": "package.json",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_vitejs_plugin_react_swc",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_vitejs_plugin_react_swc"
     },
     {
       "relation": "contains",
@@ -1491,9 +1581,9 @@
       "source_file": "public/manifest.json",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "public_manifest",
-      "target": "public_manifest_background_color",
-      "confidence_score": 1.0
+      "target": "public_manifest_background_color"
     },
     {
       "relation": "contains",
@@ -1501,9 +1591,9 @@
       "source_file": "public/manifest.json",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "public_manifest",
-      "target": "public_manifest_display",
-      "confidence_score": 1.0
+      "target": "public_manifest_display"
     },
     {
       "relation": "contains",
@@ -1511,9 +1601,9 @@
       "source_file": "public/manifest.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "public_manifest",
-      "target": "public_manifest_icons",
-      "confidence_score": 1.0
+      "target": "public_manifest_icons"
     },
     {
       "relation": "contains",
@@ -1521,9 +1611,9 @@
       "source_file": "public/manifest.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "public_manifest",
-      "target": "public_manifest_name",
-      "confidence_score": 1.0
+      "target": "public_manifest_name"
     },
     {
       "relation": "contains",
@@ -1531,9 +1621,9 @@
       "source_file": "public/manifest.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "public_manifest",
-      "target": "public_manifest_short_name",
-      "confidence_score": 1.0
+      "target": "public_manifest_short_name"
     },
     {
       "relation": "contains",
@@ -1541,9 +1631,9 @@
       "source_file": "public/manifest.json",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "public_manifest",
-      "target": "public_manifest_start_url",
-      "confidence_score": 1.0
+      "target": "public_manifest_start_url"
     },
     {
       "relation": "contains",
@@ -1551,8 +1641,120 @@
       "source_file": "public/manifest.json",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "public_manifest",
-      "target": "public_manifest_theme_color",
+      "target": "public_manifest_theme_color"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/seed-supabase.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "scripts_seed_supabase",
+      "target": "scripts_seed_supabase_dirname",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/seed-supabase.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "scripts_seed_supabase",
+      "target": "scripts_seed_supabase_envcontent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/seed-supabase.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "scripts_seed_supabase",
+      "target": "scripts_seed_supabase_envpath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/seed-supabase.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "scripts_seed_supabase",
+      "target": "scripts_seed_supabase_envvars",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/seed-supabase.js",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "scripts_seed_supabase",
+      "target": "scripts_seed_supabase_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/seed-supabase.js",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "scripts_seed_supabase",
+      "target": "scripts_seed_supabase_seed_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/seed-supabase.js",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "scripts_seed_supabase",
+      "target": "scripts_seed_supabase_seedfarmerproducts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/seed-supabase.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "scripts_seed_supabase",
+      "target": "scripts_seed_supabase_seedtable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/seed-supabase.js",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "scripts_seed_supabase",
+      "target": "scripts_seed_supabase_supabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/seed-supabase.js",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "scripts_seed_supabase_main",
+      "target": "scripts_seed_supabase_seedtable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/seed-supabase.js",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "scripts_seed_supabase_main",
+      "target": "scripts_seed_supabase_seedfarmerproducts",
       "confidence_score": 1.0
     },
     {
@@ -1562,9 +1764,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_about",
-      "confidence_score": 1.0
+      "target": "components_about"
     },
     {
       "relation": "imports",
@@ -1573,9 +1775,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_about_about",
-      "confidence_score": 1.0
+      "target": "components_about_about"
     },
     {
       "relation": "imports_from",
@@ -1584,9 +1786,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_addcart",
-      "confidence_score": 1.0
+      "target": "components_addcart"
     },
     {
       "relation": "imports",
@@ -1595,9 +1797,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_addcart_addcart",
-      "confidence_score": 1.0
+      "target": "components_addcart_addcart"
     },
     {
       "relation": "imports_from",
@@ -1606,9 +1808,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_consumer",
-      "confidence_score": 1.0
+      "target": "components_consumer"
     },
     {
       "relation": "imports",
@@ -1617,9 +1819,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_consumer_consumer",
-      "confidence_score": 1.0
+      "target": "components_consumer_consumer"
     },
     {
       "relation": "imports_from",
@@ -1628,9 +1830,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_farmer",
-      "confidence_score": 1.0
+      "target": "components_farmer"
     },
     {
       "relation": "imports",
@@ -1639,9 +1841,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_farmer_farmer",
-      "confidence_score": 1.0
+      "target": "components_farmer_farmer"
     },
     {
       "relation": "imports_from",
@@ -1650,9 +1852,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_forgetpassword",
-      "confidence_score": 1.0
+      "target": "components_forgetpassword"
     },
     {
       "relation": "imports",
@@ -1661,9 +1863,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_forgetpassword_signin",
-      "confidence_score": 1.0
+      "target": "components_forgetpassword_signin"
     },
     {
       "relation": "imports_from",
@@ -1672,9 +1874,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_fruits",
-      "confidence_score": 1.0
+      "target": "components_fruits"
     },
     {
       "relation": "imports",
@@ -1683,9 +1885,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_fruits_fruits",
-      "confidence_score": 1.0
+      "target": "components_fruits_fruits"
     },
     {
       "relation": "imports_from",
@@ -1694,9 +1896,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_grains",
-      "confidence_score": 1.0
+      "target": "components_grains"
     },
     {
       "relation": "imports",
@@ -1705,9 +1907,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_grains_grains",
-      "confidence_score": 1.0
+      "target": "components_grains_grains"
     },
     {
       "relation": "imports_from",
@@ -1716,9 +1918,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_home",
-      "confidence_score": 1.0
+      "target": "components_home"
     },
     {
       "relation": "imports",
@@ -1727,9 +1929,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_home_home",
-      "confidence_score": 1.0
+      "target": "components_home_home"
     },
     {
       "relation": "imports_from",
@@ -1738,9 +1940,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_navbar",
-      "confidence_score": 1.0
+      "target": "components_navbar"
     },
     {
       "relation": "imports",
@@ -1749,9 +1951,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_navbar_navbar",
-      "confidence_score": 1.0
+      "target": "components_navbar_navbar"
     },
     {
       "relation": "imports_from",
@@ -1760,9 +1962,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_nuts",
-      "confidence_score": 1.0
+      "target": "components_nuts"
     },
     {
       "relation": "imports",
@@ -1771,9 +1973,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_nuts_nuts",
-      "confidence_score": 1.0
+      "target": "components_nuts_nuts"
     },
     {
       "relation": "imports_from",
@@ -1782,9 +1984,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_payment",
-      "confidence_score": 1.0
+      "target": "components_payment"
     },
     {
       "relation": "imports",
@@ -1793,9 +1995,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_payment_payment",
-      "confidence_score": 1.0
+      "target": "components_payment_payment"
     },
     {
       "relation": "imports_from",
@@ -1804,9 +2006,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_services",
-      "confidence_score": 1.0
+      "target": "components_services"
     },
     {
       "relation": "imports",
@@ -1815,9 +2017,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_services_services",
-      "confidence_score": 1.0
+      "target": "components_services_services"
     },
     {
       "relation": "imports_from",
@@ -1826,9 +2028,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_signinwithsupabase",
-      "confidence_score": 1.0
+      "target": "components_signinwithsupabase"
     },
     {
       "relation": "imports",
@@ -1837,9 +2039,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_signinwithsupabase_signinside",
-      "confidence_score": 1.0
+      "target": "components_signinwithsupabase_signinside"
     },
     {
       "relation": "imports_from",
@@ -1848,9 +2050,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_signupwithsupabase",
-      "confidence_score": 1.0
+      "target": "components_signupwithsupabase"
     },
     {
       "relation": "imports",
@@ -1859,9 +2061,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_signupwithsupabase_signupside",
-      "confidence_score": 1.0
+      "target": "components_signupwithsupabase_signupside"
     },
     {
       "relation": "imports_from",
@@ -1870,9 +2072,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_spices",
-      "confidence_score": 1.0
+      "target": "components_spices"
     },
     {
       "relation": "imports",
@@ -1881,31 +2083,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_spices_spices",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/App.jsx",
-      "source_location": "L22",
-      "weight": 1.0,
-      "source": "src_app",
-      "target": "components_translate",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/App.jsx",
-      "source_location": "L22",
-      "weight": 1.0,
-      "source": "src_app",
-      "target": "components_translate_translate",
-      "confidence_score": 1.0
+      "target": "components_spices_spices"
     },
     {
       "relation": "imports_from",
@@ -1914,9 +2094,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_updatepassword",
-      "confidence_score": 1.0
+      "target": "components_updatepassword"
     },
     {
       "relation": "imports",
@@ -1925,9 +2105,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_updatepassword_updatepassword",
-      "confidence_score": 1.0
+      "target": "components_updatepassword_updatepassword"
     },
     {
       "relation": "imports_from",
@@ -1936,9 +2116,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_vegetable",
-      "confidence_score": 1.0
+      "target": "components_vegetable"
     },
     {
       "relation": "imports",
@@ -1947,9 +2127,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_vegetable_vegetables",
-      "confidence_score": 1.0
+      "target": "components_vegetable_vegetables"
     },
     {
       "relation": "imports_from",
@@ -1958,9 +2138,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_weather",
-      "confidence_score": 1.0
+      "target": "components_weather"
     },
     {
       "relation": "imports",
@@ -1969,9 +2149,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_weather_weather",
-      "confidence_score": 1.0
+      "target": "components_weather_weather"
     },
     {
       "relation": "contains",
@@ -1979,9 +2159,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_app_app",
-      "confidence_score": 1.0
+      "target": "src_app_app"
     },
     {
       "relation": "imports_from",
@@ -1990,9 +2170,9 @@
       "source_file": "src/main.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_app",
-      "confidence_score": 1.0
+      "target": "src_app"
     },
     {
       "relation": "imports",
@@ -2001,9 +2181,9 @@
       "source_file": "src/main.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_app_app",
-      "confidence_score": 1.0
+      "target": "src_app_app"
     },
     {
       "relation": "imports_from",
@@ -2012,9 +2192,9 @@
       "source_file": "src/Components/SignInWithSupaBase.jsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_signinwithsupabase",
-      "target": "components_createclient",
-      "confidence_score": 1.0
+      "target": "components_createclient"
     },
     {
       "relation": "imports",
@@ -2023,9 +2203,9 @@
       "source_file": "src/Components/SignInWithSupaBase.jsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_signinwithsupabase",
-      "target": "components_createclient_supabase",
-      "confidence_score": 1.0
+      "target": "components_createclient_supabase"
     },
     {
       "relation": "contains",
@@ -2033,9 +2213,9 @@
       "source_file": "src/Components/SignInWithSupaBase.jsx",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_signinwithsupabase",
-      "target": "components_signinwithsupabase_signinside",
-      "confidence_score": 1.0
+      "target": "components_signinwithsupabase_signinside"
     },
     {
       "relation": "contains",
@@ -2043,29 +2223,9 @@
       "source_file": "src/Components/SignInWithSupaBase.jsx",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_signinwithsupabase",
-      "target": "components_signinwithsupabase_theme",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/Components/SignUpSide.jsx",
-      "source_location": "L24",
-      "weight": 1.0,
-      "source": "components_signupside",
-      "target": "components_signupside_signupside",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/Components/SignUpSide.jsx",
-      "source_location": "L22",
-      "weight": 1.0,
-      "source": "components_signupside",
-      "target": "components_signupside_theme",
-      "confidence_score": 1.0
+      "target": "components_signinwithsupabase_theme"
     },
     {
       "relation": "imports_from",
@@ -2074,9 +2234,9 @@
       "source_file": "src/Components/SignUpWithSupaBase.jsx",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_signupwithsupabase",
-      "target": "components_createclient",
-      "confidence_score": 1.0
+      "target": "components_createclient"
     },
     {
       "relation": "imports",
@@ -2085,9 +2245,9 @@
       "source_file": "src/Components/SignUpWithSupaBase.jsx",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_signupwithsupabase",
-      "target": "components_createclient_supabase",
-      "confidence_score": 1.0
+      "target": "components_createclient_supabase"
     },
     {
       "relation": "contains",
@@ -2095,9 +2255,9 @@
       "source_file": "src/Components/SignUpWithSupaBase.jsx",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_signupwithsupabase",
-      "target": "components_signupwithsupabase_signupside",
-      "confidence_score": 1.0
+      "target": "components_signupwithsupabase_signupside"
     },
     {
       "relation": "contains",
@@ -2105,29 +2265,9 @@
       "source_file": "src/Components/SignUpWithSupaBase.jsx",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_signupwithsupabase",
-      "target": "components_signupwithsupabase_theme",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/Components/SigninSide.jsx",
-      "source_location": "L21",
-      "weight": 1.0,
-      "source": "components_signinside",
-      "target": "components_signinside_signinside",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/Components/SigninSide.jsx",
-      "source_location": "L19",
-      "weight": 1.0,
-      "source": "components_signinside",
-      "target": "components_signinside_theme",
-      "confidence_score": 1.0
+      "target": "components_signupwithsupabase_theme"
     },
     {
       "relation": "contains",
@@ -2135,9 +2275,9 @@
       "source_file": "src/Components/about.jsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_about",
-      "target": "components_about_about",
-      "confidence_score": 1.0
+      "target": "components_about_about"
     },
     {
       "relation": "contains",
@@ -2145,9 +2285,9 @@
       "source_file": "src/Components/addCart.jsx",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_addcart",
-      "target": "components_addcart_addcart",
-      "confidence_score": 1.0
+      "target": "components_addcart_addcart"
     },
     {
       "relation": "imports_from",
@@ -2156,9 +2296,9 @@
       "source_file": "src/Components/addCart.jsx",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_addcart",
-      "target": "components_navbar",
-      "confidence_score": 1.0
+      "target": "components_navbar"
     },
     {
       "relation": "imports",
@@ -2167,9 +2307,9 @@
       "source_file": "src/Components/addCart.jsx",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_addcart",
-      "target": "components_navbar_navbar",
-      "confidence_score": 1.0
+      "target": "components_navbar_navbar"
     },
     {
       "relation": "imports_from",
@@ -2178,9 +2318,9 @@
       "source_file": "src/Components/addCart.jsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_addcart",
-      "target": "components_nothing",
-      "confidence_score": 1.0
+      "target": "components_nothing"
     },
     {
       "relation": "imports",
@@ -2189,8 +2329,18 @@
       "source_file": "src/Components/addCart.jsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_addcart",
-      "target": "components_nothing_nothing",
+      "target": "components_nothing_nothing"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Components/consumer.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "components_consumer",
+      "target": "components_consumer_categories",
       "confidence_score": 1.0
     },
     {
@@ -2199,19 +2349,9 @@
       "source_file": "src/Components/consumer.jsx",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_consumer",
-      "target": "components_consumer_consumer",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/Components/consumer.jsx",
-      "source_location": "L12",
-      "weight": 1.0,
-      "source": "components_consumer",
-      "target": "components_consumer_usestyles",
-      "confidence_score": 1.0
+      "target": "components_consumer_consumer"
     },
     {
       "relation": "imports_from",
@@ -2220,20 +2360,9 @@
       "source_file": "src/Components/consumer.jsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_consumer",
-      "target": "components_navbar",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/Components/consumer.jsx",
-      "source_location": "L25",
-      "weight": 1.0,
-      "source": "components_consumer_consumer",
-      "target": "components_consumer_usestyles",
-      "confidence_score": 1.0
+      "target": "components_navbar"
     },
     {
       "relation": "contains",
@@ -2241,8 +2370,19 @@
       "source_file": "src/Components/createClient.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_createclient",
-      "target": "components_createclient_supabase",
+      "target": "components_createclient_supabase"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Components/farmer.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "components_farmer",
+      "target": "components_createclient",
       "confidence_score": 1.0
     },
     {
@@ -2252,9 +2392,9 @@
       "source_file": "src/Components/forgetPassword.jsx",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_forgetpassword",
-      "target": "components_createclient",
-      "confidence_score": 1.0
+      "target": "components_createclient"
     },
     {
       "relation": "imports_from",
@@ -2263,9 +2403,9 @@
       "source_file": "src/Components/fruits.jsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_fruits",
-      "target": "components_createclient",
-      "confidence_score": 1.0
+      "target": "components_createclient"
     },
     {
       "relation": "imports_from",
@@ -2274,9 +2414,9 @@
       "source_file": "src/Components/grains.jsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_grains",
-      "target": "components_createclient",
-      "confidence_score": 1.0
+      "target": "components_createclient"
     },
     {
       "relation": "imports_from",
@@ -2285,9 +2425,9 @@
       "source_file": "src/Components/nuts.jsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_nuts",
-      "target": "components_createclient",
-      "confidence_score": 1.0
+      "target": "components_createclient"
     },
     {
       "relation": "imports_from",
@@ -2296,9 +2436,9 @@
       "source_file": "src/Components/spices.jsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_spices",
-      "target": "components_createclient",
-      "confidence_score": 1.0
+      "target": "components_createclient"
     },
     {
       "relation": "imports_from",
@@ -2307,9 +2447,9 @@
       "source_file": "src/Components/updatePassword.jsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_updatepassword",
-      "target": "components_createclient",
-      "confidence_score": 1.0
+      "target": "components_createclient"
     },
     {
       "relation": "imports_from",
@@ -2318,8 +2458,19 @@
       "source_file": "src/Components/vegetable.jsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_vegetable",
-      "target": "components_createclient",
+      "target": "components_createclient"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Components/farmer.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "components_farmer",
+      "target": "components_createclient_supabase",
       "confidence_score": 1.0
     },
     {
@@ -2329,9 +2480,9 @@
       "source_file": "src/Components/forgetPassword.jsx",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_forgetpassword",
-      "target": "components_createclient_supabase",
-      "confidence_score": 1.0
+      "target": "components_createclient_supabase"
     },
     {
       "relation": "imports",
@@ -2340,9 +2491,9 @@
       "source_file": "src/Components/fruits.jsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_fruits",
-      "target": "components_createclient_supabase",
-      "confidence_score": 1.0
+      "target": "components_createclient_supabase"
     },
     {
       "relation": "imports",
@@ -2351,9 +2502,9 @@
       "source_file": "src/Components/grains.jsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_grains",
-      "target": "components_createclient_supabase",
-      "confidence_score": 1.0
+      "target": "components_createclient_supabase"
     },
     {
       "relation": "imports",
@@ -2362,9 +2513,9 @@
       "source_file": "src/Components/nuts.jsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_nuts",
-      "target": "components_createclient_supabase",
-      "confidence_score": 1.0
+      "target": "components_createclient_supabase"
     },
     {
       "relation": "imports",
@@ -2373,9 +2524,9 @@
       "source_file": "src/Components/spices.jsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_spices",
-      "target": "components_createclient_supabase",
-      "confidence_score": 1.0
+      "target": "components_createclient_supabase"
     },
     {
       "relation": "imports",
@@ -2384,9 +2535,9 @@
       "source_file": "src/Components/updatePassword.jsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_updatepassword",
-      "target": "components_createclient_supabase",
-      "confidence_score": 1.0
+      "target": "components_createclient_supabase"
     },
     {
       "relation": "imports",
@@ -2395,9 +2546,9 @@
       "source_file": "src/Components/vegetable.jsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_vegetable",
-      "target": "components_createclient_supabase",
-      "confidence_score": 1.0
+      "target": "components_createclient_supabase"
     },
     {
       "relation": "contains",
@@ -2405,9 +2556,9 @@
       "source_file": "src/Components/farmer.jsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_farmer",
-      "target": "components_farmer_farmer",
-      "confidence_score": 1.0
+      "target": "components_farmer_farmer"
     },
     {
       "relation": "contains",
@@ -2415,9 +2566,9 @@
       "source_file": "src/Components/forgetPassword.jsx",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_forgetpassword",
-      "target": "components_forgetpassword_defaulttheme",
-      "confidence_score": 1.0
+      "target": "components_forgetpassword_defaulttheme"
     },
     {
       "relation": "contains",
@@ -2425,9 +2576,9 @@
       "source_file": "src/Components/forgetPassword.jsx",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_forgetpassword",
-      "target": "components_forgetpassword_signin",
-      "confidence_score": 1.0
+      "target": "components_forgetpassword_signin"
     },
     {
       "relation": "contains",
@@ -2435,8 +2586,18 @@
       "source_file": "src/Components/fruits.jsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_fruits",
-      "target": "components_fruits_fruits",
+      "target": "components_fruits_fruits"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Components/fruits.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "components_fruits",
+      "target": "components_fruits_skeletoncard",
       "confidence_score": 1.0
     },
     {
@@ -2445,8 +2606,28 @@
       "source_file": "src/Components/grains.jsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_grains",
-      "target": "components_grains_grains",
+      "target": "components_grains_grains"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Components/grains.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "components_grains",
+      "target": "components_grains_skeletoncard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Components/home.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "components_home",
+      "target": "components_home_featureitems",
       "confidence_score": 1.0
     },
     {
@@ -2455,9 +2636,9 @@
       "source_file": "src/Components/home.jsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_home",
-      "target": "components_home_home",
-      "confidence_score": 1.0
+      "target": "components_home_home"
     },
     {
       "relation": "contains",
@@ -2465,9 +2646,9 @@
       "source_file": "src/Components/navbar.jsx",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_navbar",
-      "target": "components_navbar_navbar",
-      "confidence_score": 1.0
+      "target": "components_navbar_navbar"
     },
     {
       "relation": "contains",
@@ -2475,9 +2656,9 @@
       "source_file": "src/Components/navbar.jsx",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_navbar",
-      "target": "components_navbar_theme",
-      "confidence_score": 1.0
+      "target": "components_navbar_theme"
     },
     {
       "relation": "contains",
@@ -2485,9 +2666,9 @@
       "source_file": "src/Components/nothing.jsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_nothing",
-      "target": "components_nothing_nothing",
-      "confidence_score": 1.0
+      "target": "components_nothing_nothing"
     },
     {
       "relation": "contains",
@@ -2495,8 +2676,18 @@
       "source_file": "src/Components/nuts.jsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_nuts",
-      "target": "components_nuts_nuts",
+      "target": "components_nuts_nuts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Components/nuts.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "components_nuts",
+      "target": "components_nuts_skeletoncard",
       "confidence_score": 1.0
     },
     {
@@ -2505,8 +2696,28 @@
       "source_file": "src/Components/payment.jsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_payment",
-      "target": "components_payment_payment",
+      "target": "components_payment_payment"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Components/services.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "components_services",
+      "target": "components_services_centralloanlinks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Components/services.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "components_services",
+      "target": "components_services_loanlinks",
       "confidence_score": 1.0
     },
     {
@@ -2515,8 +2726,18 @@
       "source_file": "src/Components/services.jsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_services",
-      "target": "components_services_services",
+      "target": "components_services_services"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Components/spices.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "components_spices",
+      "target": "components_spices_skeletoncard",
       "confidence_score": 1.0
     },
     {
@@ -2525,19 +2746,9 @@
       "source_file": "src/Components/spices.jsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_spices",
-      "target": "components_spices_spices",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/Components/translate.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "components_translate",
-      "target": "components_translate_translate",
-      "confidence_score": 1.0
+      "target": "components_spices_spices"
     },
     {
       "relation": "contains",
@@ -2545,9 +2756,9 @@
       "source_file": "src/Components/updatePassword.jsx",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_updatepassword",
-      "target": "components_updatepassword_defaulttheme",
-      "confidence_score": 1.0
+      "target": "components_updatepassword_defaulttheme"
     },
     {
       "relation": "contains",
@@ -2555,8 +2766,18 @@
       "source_file": "src/Components/updatePassword.jsx",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_updatepassword",
-      "target": "components_updatepassword_updatepassword",
+      "target": "components_updatepassword_updatepassword"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Components/vegetable.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "components_vegetable",
+      "target": "components_vegetable_skeletoncard",
       "confidence_score": 1.0
     },
     {
@@ -2565,9 +2786,9 @@
       "source_file": "src/Components/vegetable.jsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_vegetable",
-      "target": "components_vegetable_vegetables",
-      "confidence_score": 1.0
+      "target": "components_vegetable_vegetables"
     },
     {
       "relation": "contains",
@@ -2575,8 +2796,18 @@
       "source_file": "src/Components/weather.jsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_weather",
-      "target": "components_weather_weather",
+      "target": "components_weather_weather"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Components/weather.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "components_weather",
+      "target": "components_weather_weatherstat",
       "confidence_score": 1.0
     },
     {
@@ -2585,9 +2816,9 @@
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme",
-      "target": "readme_farmbuddy",
-      "confidence_score": 1.0
+      "target": "readme_farmbuddy"
     },
     {
       "relation": "contains",
@@ -2595,9 +2826,9 @@
       "source_file": "README.md",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme",
-      "target": "readme_happy_consuming_with_farmbuddy",
-      "confidence_score": 1.0
+      "target": "readme_happy_consuming_with_farmbuddy"
     },
     {
       "relation": "contains",
@@ -2605,9 +2836,9 @@
       "source_file": "README.md",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_farmbuddy",
-      "target": "readme_contributing",
-      "confidence_score": 1.0
+      "target": "readme_contributing"
     },
     {
       "relation": "contains",
@@ -2615,9 +2846,9 @@
       "source_file": "README.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_farmbuddy",
-      "target": "readme_features",
-      "confidence_score": 1.0
+      "target": "readme_features"
     },
     {
       "relation": "contains",
@@ -2625,9 +2856,9 @@
       "source_file": "README.md",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_farmbuddy",
-      "target": "readme_getting_started",
-      "confidence_score": 1.0
+      "target": "readme_getting_started"
     },
     {
       "relation": "contains",
@@ -2635,9 +2866,9 @@
       "source_file": "README.md",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_farmbuddy",
-      "target": "readme_license",
-      "confidence_score": 1.0
+      "target": "readme_license"
     },
     {
       "relation": "contains",
@@ -2645,9 +2876,9 @@
       "source_file": "README.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_farmbuddy",
-      "target": "readme_technologies_used",
-      "confidence_score": 1.0
+      "target": "readme_technologies_used"
     },
     {
       "relation": "contains",
@@ -2655,11 +2886,11 @@
       "source_file": "README.md",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_license",
-      "target": "readme_enjoy_our_app_at_https_farm_buddy_new_edition_vercel_app",
-      "confidence_score": 1.0
+      "target": "readme_enjoy_our_app_at_https_farm_buddy_new_edition_vercel_app"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "4c1b9fd5380789fcd903a57f8018da69b05111a8"
+  "built_at_commit": "133d8f98df8e9426b4144b820aff2353e8cdbf0f"
 }
