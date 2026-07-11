@@ -51,7 +51,7 @@ const Payment = () => {
                 component="img"
                 src={getImgUrl('/images/GPAY.jpeg')}
                 alt="Google Pay"
-                sx={{ height: 48, objectFit: 'contain' }}
+                sx={{ width: '100%', maxWidth: 280, height: 'auto', objectFit: 'contain' }}
               />
             </Box>
 
