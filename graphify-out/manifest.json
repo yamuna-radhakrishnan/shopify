@@ -35,8 +35,8 @@
     "semantic_hash": ""
   },
   "src/Components/SignUpWithSupaBase.jsx": {
-    "mtime": 1783259744.9802506,
-    "ast_hash": "b01a528c77319a1c609acbe86fff68e8",
+    "mtime": 1783756410.548095,
+    "ast_hash": "2bd6401a8eb12c7025e11bebb10a8d52",
     "semantic_hash": ""
   },
   "src/Components/about.jsx": {
@@ -85,8 +85,8 @@
     "semantic_hash": ""
   },
   "src/Components/navbar.jsx": {
-    "mtime": 1783164417.5194232,
-    "ast_hash": "3c05bc4855236c54ea94cb0e996fdcf5",
+    "mtime": 1783755890.4079628,
+    "ast_hash": "3a9313325a0ab45f6606994ed979b9fb",
     "semantic_hash": ""
   },
   "src/Components/nothing.jsx": {
@@ -180,8 +180,8 @@
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1783149280.708149,
-    "ast_hash": "0760101cc447f351f5694b3f1fae25aa",
+    "mtime": 1783756019.38947,
+    "ast_hash": "cebebf46487c5a01df65ff5a1995fc85",
     "semantic_hash": ""
   },
   "public/robots.txt": {
@@ -560,8 +560,8 @@
     "semantic_hash": ""
   },
   "supabase/migration.sql": {
-    "mtime": 1783166015.8759992,
-    "ast_hash": "46a60991bde65854c556e736a90a08e4",
+    "mtime": 1783756425.8136063,
+    "ast_hash": "975ebcf133b1942100029f36738ff777",
     "semantic_hash": ""
   },
   ".github/workflows/deploy.yml": {

@@ -12,7 +12,6 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined'
 import Typography from '@mui/material/Typography'
 import Container from '@mui/material/Container'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
-import MenuItem from '@mui/material/MenuItem'
 import FormControlLabel from '@mui/material/FormControlLabel'
 import Paper from '@mui/material/Paper'
 import Swal from 'sweetalert2'
@@ -51,7 +50,7 @@ export default function SignUpSide() {
       const { data, error } = await SupaBase.auth.signUp({
         email: input.email,
         password: input.password,
-        options: { data: { full_name: name }, emailRedirectTo: `${window.location.origin}/signin` },
+        options: { data: { full_name: name, phone: input.number }, emailRedirectTo: `${window.location.origin}${window.location.pathname}#/verify-email` },
       })
 
       if (error) {
@@ -87,18 +86,11 @@ export default function SignUpSide() {
     email: '',
     password: '',
     passwordConfirm: '',
+    number: '',
   })
   const handleInput = (event) => {
     setInputs({ ...input, [event.target.name]: event.target.value })
   }
-
-  const proofs = [
-    'Aadhar Card',
-    'Voter Id',
-    'Driving License',
-    'Passport',
-    'Ration card',
-  ]
 
   return (
     <Container
@@ -204,39 +196,11 @@ export default function SignUpSide() {
                         fullWidth
                         name="number"
                         label="Phone Number"
-                        type="number"
+                        type="tel"
                         id="number"
-                        autoComplete="new-password"
-                      />
-                    </Grid>
-                    <Grid item xs={12} sm={6}>
-                      <TextField
-                        autoComplete="given-name"
-                        name="idProof"
-                        select
-                        required
-                        fullWidth
-                        id="idProof"
-                        label="Id Proof"
-                        helperText="Please select your id proof"
-                        autoFocus
-                      >
-                        {proofs.map((option) => (
-                          <MenuItem key={option} value={option}>
-                            {option}
-                          </MenuItem>
-                        ))}
-                      </TextField>
-                    </Grid>
-
-                    <Grid item xs={12} sm={6}>
-                      <TextField
-                        required
-                        fullWidth
-                        id="idCardNo"
-                        label="ID card no"
-                        name="idCardNo"
-                        autoComplete="family-name"
+                        autoComplete="tel"
+                        value={input.number}
+                        onChange={handleInput}
                       />
                     </Grid>
 

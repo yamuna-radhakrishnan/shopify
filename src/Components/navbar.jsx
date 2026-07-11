@@ -12,12 +12,13 @@ import Button from '@mui/material/Button'
 import Tooltip from '@mui/material/Tooltip'
 import MenuItem from '@mui/material/MenuItem'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import AgricultureIcon from '@mui/icons-material/Agriculture'
 import { ThemeProvider, createTheme } from '@mui/material/styles'
 import '../Styles/navbar.css'
 import PropTypes from 'prop-types'
 import logo from '/images/logo-white-transparent.png'
+import { SupaBase } from './createClient'
 
 const theme = createTheme({
   palette: {
@@ -37,17 +38,18 @@ const theme = createTheme({
 
 const Navbar = ({ children }) => {
   const location = useLocation()
+  const navigate = useNavigate()
   const pages = [
     { name: 'Consumer', path: '/consumer' },
     { name: 'Services', path: '/services' },
     { name: 'About', path: '/about' },
     { name: 'Farmer', path: '/farmer' },
   ]
-  const settings = ['Profile', 'Account', 'Dashboard', 'Logout']
 
   const [anchorElNav, setAnchorElNav] = React.useState(null)
   const [anchorElUser, setAnchorElUser] = React.useState(null)
   const [scrolled, setScrolled] = React.useState(false)
+  const [session, setSession] = React.useState(null)
 
   // FIX: scroll listener properly in useEffect with cleanup
   React.useEffect(() => {
@@ -57,6 +59,22 @@ const Navbar = ({ children }) => {
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  React.useEffect(() => {
+    SupaBase.auth.getSession().then(({ data: { session } }) => {
+      setSession(session)
+    })
+    const { data: { subscription } } = SupaBase.auth.onAuthStateChange((_event, session) => {
+      setSession(session)
+    })
+    return () => subscription?.unsubscribe()
+  }, [])
+
+  const handleLogout = async () => {
+    await SupaBase.auth.signOut()
+    handleCloseUserMenu()
+    navigate('/')
+  }
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget)
@@ -138,6 +156,20 @@ const Navbar = ({ children }) => {
                       </MenuItem>
                     </Link>
                   ))}
+                  {!session && (
+                    <Box sx={{ borderTop: '1px solid rgba(255,255,255,0.1)', pt: 1, mt: 1 }}>
+                      <Link to="/signin" style={{ textDecoration: 'none', color: 'inherit' }}>
+                        <MenuItem onClick={handleCloseNavMenu}>
+                          <Typography textAlign="center" sx={{ color: '#3d9e6e', fontWeight: 600 }}>Sign In</Typography>
+                        </MenuItem>
+                      </Link>
+                      <Link to="/signup" style={{ textDecoration: 'none', color: 'inherit' }}>
+                        <MenuItem onClick={handleCloseNavMenu}>
+                          <Typography textAlign="center" sx={{ color: '#3d9e6e', fontWeight: 600 }}>Sign Up</Typography>
+                        </MenuItem>
+                      </Link>
+                    </Box>
+                  )}
                 </Menu>
               </Box>
 
@@ -232,39 +264,95 @@ const Navbar = ({ children }) => {
                 </Box>
               </Box>
 
-              {/* User avatar menu */}
-              <Box sx={{ flexGrow: 0, ml: 1 }}>
-                <Tooltip title="Account settings">
-                  <IconButton
-                    onClick={handleOpenUserMenu}
-                    sx={{ p: 0.5 }}
-                    aria-label="Open account settings"
-                    aria-controls="nav-menu-user"
-                    aria-haspopup="true"
-                  >
-                    <Avatar
-                      alt="User account"
-                      src="/static/images/avatar/2.jpg"
-                      sx={{ width: 36, height: 36, bgcolor: '#235c3f' }}
-                    />
-                  </IconButton>
-                </Tooltip>
-                <Menu
-                  sx={{ mt: '45px' }}
-                  id="nav-menu-user"
-                  anchorEl={anchorElUser}
-                  anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
-                  keepMounted
-                  transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-                  open={Boolean(anchorElUser)}
-                  onClose={handleCloseUserMenu}
-                >
-                  {settings.map((setting) => (
-                    <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                      <Typography textAlign="center">{setting}</Typography>
-                    </MenuItem>
-                  ))}
-                </Menu>
+              {/* Auth area */}
+              <Box sx={{ flexGrow: 0, ml: 1, display: 'flex', alignItems: 'center', gap: 1 }}>
+                {session ? (
+                  <>
+                    <Tooltip title="Account settings">
+                      <IconButton
+                        onClick={handleOpenUserMenu}
+                        sx={{ p: 0.5 }}
+                        aria-label="Open account settings"
+                        aria-controls="nav-menu-user"
+                        aria-haspopup="true"
+                      >
+                        <Avatar
+                          alt="User account"
+                          src={session.user?.user_metadata?.avatar_url || ''}
+                          sx={{ width: 36, height: 36, bgcolor: '#235c3f' }}
+                        >
+                          {session.user?.email?.charAt(0).toUpperCase()}
+                        </Avatar>
+                      </IconButton>
+                    </Tooltip>
+                    <Menu
+                      sx={{ mt: '45px' }}
+                      id="nav-menu-user"
+                      anchorEl={anchorElUser}
+                      anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+                      keepMounted
+                      transformOrigin={{ vertical: 'top', horizontal: 'right' }}
+                      open={Boolean(anchorElUser)}
+                      onClose={handleCloseUserMenu}
+                    >
+                      <MenuItem disabled sx={{ opacity: '1 !important' }}>
+                        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                          {session.user?.email}
+                        </Typography>
+                      </MenuItem>
+                      <Box sx={{ borderTop: '1px solid', borderColor: 'divider' }}>
+                        <MenuItem onClick={handleLogout}>
+                          <Typography textAlign="center">Logout</Typography>
+                        </MenuItem>
+                      </Box>
+                    </Menu>
+                  </>
+                ) : (
+                  <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 1 }}>
+                    <Button
+                      component={Link}
+                      to="/signin"
+                      variant="outlined"
+                      size="small"
+                      sx={{
+                        color: '#fff',
+                        borderColor: 'rgba(255,255,255,0.4)',
+                        textTransform: 'none',
+                        fontFamily: "'DM Sans', sans-serif",
+                        fontWeight: 500,
+                        fontSize: '0.8rem',
+                        px: 1.5,
+                        py: 0.5,
+                        '&:hover': {
+                          borderColor: '#3d9e6e',
+                          bgcolor: 'rgba(61,158,110,0.15)',
+                        },
+                      }}
+                    >
+                      Sign In
+                    </Button>
+                    <Button
+                      component={Link}
+                      to="/signup"
+                      variant="contained"
+                      size="small"
+                      sx={{
+                        bgcolor: '#3d9e6e',
+                        textTransform: 'none',
+                        fontFamily: "'DM Sans', sans-serif",
+                        fontWeight: 500,
+                        fontSize: '0.8rem',
+                        px: 1.5,
+                        py: 0.5,
+                        '&:hover': {
+                          bgcolor: '#2d7e56',
+                        },
+                      }}
+                    >
+                      Sign Up
+                    </Button>
+                  </Box>
+                )}
               </Box>
             </Toolbar>
           </Container>

@@ -15,10 +15,78 @@
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Inline styles to prevent Skip Link FOUC during loading & render custom loader -->
+    <style>
+      /* Hide skip link by default when CSS is not yet loaded */
+      .skip-link {
+        position: absolute;
+        top: -100px;
+        left: 16px;
+        z-index: 1000;
+        padding: 12px 24px;
+        background: #1a4731;
+        color: #f0faf5;
+        border-radius: 8px;
+        font-weight: 600;
+        text-decoration: none;
+        font-family: sans-serif;
+        transition: top 150ms ease-out;
+      }
+      .skip-link:focus {
+        top: 16px;
+      }
+
+      /* Premium Loading Spinner */
+      .loader-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: #fdf9f4; /* Matching cream background */
+        font-family: 'DM Serif Display', Georgia, serif;
+        color: #1a2a1e;
+      }
+      .loader-logo {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 24px;
+        color: #1a4731;
+        animation: pulse 2s infinite ease-in-out;
+      }
+      .loader-spinner {
+        width: 48px;
+        height: 48px;
+        border: 4px solid #d0f0e0;
+        border-top: 4px solid #1a4731;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 0.6; transform: scale(0.98); }
+        50% { opacity: 1; transform: scale(1.02); }
+      }
+    </style>
   </head>
   <body>
-    <a class="skip-link" href="#main-content">Skip to main content</a>
-    <div id="root"></div>
+    <a 
+      class="skip-link" 
+      href="#main-content" 
+      onclick="event.preventDefault(); const el = document.getElementById('main-content'); if (el) { el.setAttribute('tabindex', '-1'); el.focus(); el.scrollIntoView({ behavior: 'smooth' }); }"
+    >
+      Skip to main content
+    </a>
+    <div id="root">
+      <div class="loader-container">
+        <div class="loader-logo">Farm Buddy</div>
+        <div class="loader-spinner"></div>
+      </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

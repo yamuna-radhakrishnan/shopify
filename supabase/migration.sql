@@ -131,3 +131,47 @@ CREATE INDEX IF NOT EXISTS idx_fruits_name ON fruits(name);
 CREATE INDEX IF NOT EXISTS idx_spices_name ON spices(name);
 CREATE INDEX IF NOT EXISTS idx_nuts_name ON nuts(name);
 CREATE INDEX IF NOT EXISTS idx_farmer_products_name ON farmer_products(name);
+
+-- 7. USER PROFILES TABLE
+-- Syncs automatically when a user signs up via the trigger below
+CREATE TABLE IF NOT EXISTS profiles (
+  id UUID PRIMARY KEY REFERENCES auth.users(id) ON DELETE CASCADE,
+  full_name TEXT DEFAULT '',
+  phone TEXT DEFAULT '',
+  avatar_url TEXT DEFAULT '',
+  created_at TIMESTAMPTZ DEFAULT NOW(),
+  updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+ALTER TABLE profiles ENABLE ROW LEVEL SECURITY;
+
+-- Users can view/edit their own profile
+CREATE POLICY "Users can view own profile" ON profiles
+  FOR SELECT USING (auth.uid() = id);
+
+CREATE POLICY "Users can update own profile" ON profiles
+  FOR UPDATE USING (auth.uid() = id);
+
+-- Auto-create profile on signup
+CREATE OR REPLACE FUNCTION public.handle_new_user()
+RETURNS TRIGGER
+LANGUAGE plpgsql
+SECURITY DEFINER SET search_path = ''
+AS $$
+BEGIN
+  INSERT INTO public.profiles (id, full_name, phone, avatar_url)
+  VALUES (
+    NEW.id,
+    COALESCE(NEW.raw_user_meta_data ->> 'full_name', ''),
+    COALESCE(NEW.raw_user_meta_data ->> 'phone', ''),
+    COALESCE(NEW.raw_user_meta_data ->> 'avatar_url', '')
+  );
+  RETURN NEW;
+END;
+$$;
+
+-- Trigger the function every time a user is created
+CREATE OR REPLACE TRIGGER on_auth_user_created
+  AFTER INSERT ON auth.users
+  FOR EACH ROW
+  EXECUTE FUNCTION public.handle_new_user();

@@ -590,7 +590,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_signinwithsupabase",
-      "community": 11,
+      "community": 2,
       "norm_label": "signinwithsupabase.jsx"
     },
     {
@@ -600,7 +600,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "components_signinwithsupabase_theme",
-      "community": 11,
+      "community": 2,
       "norm_label": "theme"
     },
     {
@@ -610,7 +610,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "components_signinwithsupabase_signinside",
-      "community": 11,
+      "community": 2,
       "norm_label": "signinside()"
     },
     {
@@ -620,27 +620,27 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_signupwithsupabase",
-      "community": 12,
+      "community": 3,
       "norm_label": "signupwithsupabase.jsx"
     },
     {
       "label": "theme",
       "file_type": "code",
       "source_file": "src/Components/SignUpWithSupaBase.jsx",
-      "source_location": "L22",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "components_signupwithsupabase_theme",
-      "community": 12,
+      "community": 3,
       "norm_label": "theme"
     },
     {
       "label": "SignUpSide()",
       "file_type": "code",
       "source_file": "src/Components/SignUpWithSupaBase.jsx",
-      "source_location": "L24",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "components_signupwithsupabase_signupside",
-      "community": 12,
+      "community": 3,
       "norm_label": "signupside()"
     },
     {
@@ -750,7 +750,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "components_farmer_farmer",
-      "community": 3,
+      "community": 1,
       "norm_label": "farmer()"
     },
     {
@@ -790,7 +790,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_fruits",
-      "community": 10,
+      "community": 3,
       "norm_label": "fruits.jsx"
     },
     {
@@ -800,7 +800,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "components_fruits_skeletoncard",
-      "community": 10,
+      "community": 3,
       "norm_label": "skeletoncard()"
     },
     {
@@ -810,7 +810,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "components_fruits_fruits",
-      "community": 10,
+      "community": 3,
       "norm_label": "fruits()"
     },
     {
@@ -820,7 +820,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_grains",
-      "community": 9,
+      "community": 2,
       "norm_label": "grains.jsx"
     },
     {
@@ -830,7 +830,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "components_grains_skeletoncard",
-      "community": 9,
+      "community": 2,
       "norm_label": "skeletoncard()"
     },
     {
@@ -840,7 +840,7 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "components_grains_grains",
-      "community": 9,
+      "community": 2,
       "norm_label": "grains()"
     },
     {
@@ -900,24 +900,24 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_navbar",
-      "community": 1,
+      "community": 2,
       "norm_label": "navbar.jsx"
     },
     {
       "label": "theme",
       "file_type": "code",
       "source_file": "src/Components/navbar.jsx",
-      "source_location": "L22",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "components_navbar_theme",
-      "community": 1,
+      "community": 2,
       "norm_label": "theme"
     },
     {
       "label": "Navbar()",
       "file_type": "code",
       "source_file": "src/Components/navbar.jsx",
-      "source_location": "L38",
+      "source_location": "L39",
       "_origin": "ast",
       "id": "components_navbar_navbar",
       "community": 1,
@@ -1040,7 +1040,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_spices",
-      "community": 13,
+      "community": 3,
       "norm_label": "spices.jsx"
     },
     {
@@ -1050,7 +1050,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "components_spices_skeletoncard",
-      "community": 13,
+      "community": 3,
       "norm_label": "skeletoncard()"
     },
     {
@@ -1060,7 +1060,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "components_spices_spices",
-      "community": 13,
+      "community": 3,
       "norm_label": "spices()"
     },
     {
@@ -1100,7 +1100,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_vegetable",
-      "community": 14,
+      "community": 3,
       "norm_label": "vegetable.jsx"
     },
     {
@@ -1110,7 +1110,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "components_vegetable_skeletoncard",
-      "community": 14,
+      "community": 3,
       "norm_label": "skeletoncard()"
     },
     {
@@ -1120,7 +1120,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "components_vegetable_vegetables",
-      "community": 14,
+      "community": 3,
       "norm_label": "vegetables()"
     },
     {
@@ -1381,9 +1381,9 @@
       "source_file": "package.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_deploy",
-      "confidence_score": 1.0
+      "target": "package_scripts_deploy"
     },
     {
       "relation": "contains",
@@ -1411,9 +1411,9 @@
       "source_file": "package.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_predeploy",
-      "confidence_score": 1.0
+      "target": "package_scripts_predeploy"
     },
     {
       "relation": "contains",
@@ -1611,9 +1611,9 @@
       "source_file": "package.json",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_gh_pages",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_gh_pages"
     },
     {
       "relation": "contains",
@@ -2294,9 +2294,9 @@
       "source_file": "src/Components/SignInWithSupaBase.jsx",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_signinwithsupabase",
-      "target": "components_imghelper",
-      "confidence_score": 1.0
+      "target": "components_imghelper"
     },
     {
       "relation": "imports",
@@ -2305,9 +2305,9 @@
       "source_file": "src/Components/SignInWithSupaBase.jsx",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_signinwithsupabase",
-      "target": "components_imghelper_getimgurl",
-      "confidence_score": 1.0
+      "target": "components_imghelper_getimgurl"
     },
     {
       "relation": "contains",
@@ -2369,9 +2369,9 @@
       "source_file": "src/Components/SignUpWithSupaBase.jsx",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_signupwithsupabase",
-      "target": "components_imghelper",
-      "confidence_score": 1.0
+      "target": "components_imghelper"
     },
     {
       "relation": "imports",
@@ -2380,9 +2380,9 @@
       "source_file": "src/Components/SignUpWithSupaBase.jsx",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_signupwithsupabase",
-      "target": "components_imghelper_getimgurl",
-      "confidence_score": 1.0
+      "target": "components_imghelper_getimgurl"
     },
     {
       "relation": "contains",
@@ -2432,9 +2432,9 @@
       "source_file": "src/Components/about.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_about",
-      "target": "components_imghelper",
-      "confidence_score": 1.0
+      "target": "components_imghelper"
     },
     {
       "relation": "imports",
@@ -2443,9 +2443,9 @@
       "source_file": "src/Components/about.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_about",
-      "target": "components_imghelper_getimgurl",
-      "confidence_score": 1.0
+      "target": "components_imghelper_getimgurl"
     },
     {
       "relation": "calls",
@@ -2454,9 +2454,9 @@
       "source_file": "src/Components/about.jsx",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_about_about",
-      "target": "components_imghelper_getimgurl",
-      "confidence_score": 1.0
+      "target": "components_imghelper_getimgurl"
     },
     {
       "relation": "contains",
@@ -2475,9 +2475,9 @@
       "source_file": "src/Components/addCart.jsx",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_addcart",
-      "target": "components_imghelper",
-      "confidence_score": 1.0
+      "target": "components_imghelper"
     },
     {
       "relation": "imports",
@@ -2486,9 +2486,9 @@
       "source_file": "src/Components/addCart.jsx",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_addcart",
-      "target": "components_imghelper_getimgurl",
-      "confidence_score": 1.0
+      "target": "components_imghelper_getimgurl"
     },
     {
       "relation": "imports_from",
@@ -2541,9 +2541,9 @@
       "source_file": "src/Components/addCart.jsx",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_addcart_addcart",
-      "target": "components_imghelper_getimgurl",
-      "confidence_score": 1.0
+      "target": "components_imghelper_getimgurl"
     },
     {
       "relation": "contains",
@@ -2572,9 +2572,9 @@
       "source_file": "src/Components/consumer.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_consumer",
-      "target": "components_imghelper",
-      "confidence_score": 1.0
+      "target": "components_imghelper"
     },
     {
       "relation": "imports",
@@ -2583,9 +2583,9 @@
       "source_file": "src/Components/consumer.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_consumer",
-      "target": "components_imghelper_getimgurl",
-      "confidence_score": 1.0
+      "target": "components_imghelper_getimgurl"
     },
     {
       "relation": "imports_from",
@@ -2656,6 +2656,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/Components/navbar.jsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_navbar",
+      "target": "components_createclient"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/Components/nuts.jsx",
       "source_location": "L13",
       "weight": 1.0,
@@ -2744,6 +2755,17 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/Components/navbar.jsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_navbar",
+      "target": "components_createclient_supabase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/Components/nuts.jsx",
       "source_location": "L13",
       "weight": 1.0,
@@ -2801,9 +2823,9 @@
       "source_file": "src/Components/farmer.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_farmer",
-      "target": "components_imghelper",
-      "confidence_score": 1.0
+      "target": "components_imghelper"
     },
     {
       "relation": "imports",
@@ -2812,9 +2834,9 @@
       "source_file": "src/Components/farmer.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_farmer",
-      "target": "components_imghelper_getimgurl",
-      "confidence_score": 1.0
+      "target": "components_imghelper_getimgurl"
     },
     {
       "relation": "calls",
@@ -2823,9 +2845,9 @@
       "source_file": "src/Components/farmer.jsx",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_farmer_farmer",
-      "target": "components_imghelper_getimgurl",
-      "confidence_score": 1.0
+      "target": "components_imghelper_getimgurl"
     },
     {
       "relation": "contains",
@@ -2874,9 +2896,9 @@
       "source_file": "src/Components/fruits.jsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_fruits",
-      "target": "components_imghelper",
-      "confidence_score": 1.0
+      "target": "components_imghelper"
     },
     {
       "relation": "imports",
@@ -2885,9 +2907,9 @@
       "source_file": "src/Components/fruits.jsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_fruits",
-      "target": "components_imghelper_getimgurl",
-      "confidence_score": 1.0
+      "target": "components_imghelper_getimgurl"
     },
     {
       "relation": "calls",
@@ -2896,9 +2918,9 @@
       "source_file": "src/Components/fruits.jsx",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_fruits_fruits",
-      "target": "components_imghelper_getimgurl",
-      "confidence_score": 1.0
+      "target": "components_imghelper_getimgurl"
     },
     {
       "relation": "contains",
@@ -2927,9 +2949,9 @@
       "source_file": "src/Components/grains.jsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_grains",
-      "target": "components_imghelper",
-      "confidence_score": 1.0
+      "target": "components_imghelper"
     },
     {
       "relation": "imports",
@@ -2938,9 +2960,9 @@
       "source_file": "src/Components/grains.jsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_grains",
-      "target": "components_imghelper_getimgurl",
-      "confidence_score": 1.0
+      "target": "components_imghelper_getimgurl"
     },
     {
       "relation": "calls",
@@ -2949,9 +2971,9 @@
       "source_file": "src/Components/grains.jsx",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_grains_grains",
-      "target": "components_imghelper_getimgurl",
-      "confidence_score": 1.0
+      "target": "components_imghelper_getimgurl"
     },
     {
       "relation": "contains",
@@ -2979,9 +3001,9 @@
       "source_file": "src/Components/imgHelper.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_imghelper",
-      "target": "components_imghelper_getimgurl",
-      "confidence_score": 1.0
+      "target": "components_imghelper_getimgurl"
     },
     {
       "relation": "imports_from",
@@ -2990,9 +3012,9 @@
       "source_file": "src/Components/nuts.jsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_nuts",
-      "target": "components_imghelper",
-      "confidence_score": 1.0
+      "target": "components_imghelper"
     },
     {
       "relation": "imports_from",
@@ -3001,9 +3023,9 @@
       "source_file": "src/Components/payment.jsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_payment",
-      "target": "components_imghelper",
-      "confidence_score": 1.0
+      "target": "components_imghelper"
     },
     {
       "relation": "imports_from",
@@ -3012,9 +3034,9 @@
       "source_file": "src/Components/spices.jsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_spices",
-      "target": "components_imghelper",
-      "confidence_score": 1.0
+      "target": "components_imghelper"
     },
     {
       "relation": "imports_from",
@@ -3023,9 +3045,9 @@
       "source_file": "src/Components/vegetable.jsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_vegetable",
-      "target": "components_imghelper",
-      "confidence_score": 1.0
+      "target": "components_imghelper"
     },
     {
       "relation": "imports",
@@ -3034,9 +3056,9 @@
       "source_file": "src/Components/nuts.jsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_nuts",
-      "target": "components_imghelper_getimgurl",
-      "confidence_score": 1.0
+      "target": "components_imghelper_getimgurl"
     },
     {
       "relation": "calls",
@@ -3045,9 +3067,9 @@
       "source_file": "src/Components/nuts.jsx",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_nuts_nuts",
-      "target": "components_imghelper_getimgurl",
-      "confidence_score": 1.0
+      "target": "components_imghelper_getimgurl"
     },
     {
       "relation": "imports",
@@ -3056,9 +3078,9 @@
       "source_file": "src/Components/payment.jsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_payment",
-      "target": "components_imghelper_getimgurl",
-      "confidence_score": 1.0
+      "target": "components_imghelper_getimgurl"
     },
     {
       "relation": "calls",
@@ -3067,9 +3089,9 @@
       "source_file": "src/Components/payment.jsx",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_payment_payment",
-      "target": "components_imghelper_getimgurl",
-      "confidence_score": 1.0
+      "target": "components_imghelper_getimgurl"
     },
     {
       "relation": "imports",
@@ -3078,9 +3100,9 @@
       "source_file": "src/Components/spices.jsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_spices",
-      "target": "components_imghelper_getimgurl",
-      "confidence_score": 1.0
+      "target": "components_imghelper_getimgurl"
     },
     {
       "relation": "calls",
@@ -3089,9 +3111,9 @@
       "source_file": "src/Components/spices.jsx",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_spices_spices",
-      "target": "components_imghelper_getimgurl",
-      "confidence_score": 1.0
+      "target": "components_imghelper_getimgurl"
     },
     {
       "relation": "imports",
@@ -3100,9 +3122,9 @@
       "source_file": "src/Components/vegetable.jsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_vegetable",
-      "target": "components_imghelper_getimgurl",
-      "confidence_score": 1.0
+      "target": "components_imghelper_getimgurl"
     },
     {
       "relation": "calls",
@@ -3111,9 +3133,9 @@
       "source_file": "src/Components/vegetable.jsx",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_vegetable_vegetables",
-      "target": "components_imghelper_getimgurl",
-      "confidence_score": 1.0
+      "target": "components_imghelper_getimgurl"
     },
     {
       "relation": "contains",
@@ -3367,5 +3389,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "610f1686510922c642de1a87cc57327007f07220"
+  "built_at_commit": "19ab6bc5f1960a8d3c8c001264d19ab30671f44a"
 }

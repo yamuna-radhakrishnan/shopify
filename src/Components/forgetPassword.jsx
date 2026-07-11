@@ -55,7 +55,7 @@ export default function SignIn() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { error } = await SupaBase.auth.resetPasswordForEmail(email, {
-      redirectTo: `${window.location.origin}/updatePassword`,
+      redirectTo: `${window.location.origin}${window.location.pathname}#/updatePassword`,
     });
     if (error) {
       Swal.fire({

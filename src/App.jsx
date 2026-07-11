@@ -19,6 +19,7 @@ import Weather from "./Components/weather";
 import Farmer from "./Components/farmer";
 import ForgetPassword from "./Components/forgetPassword";
 import UpdatePassword from "./Components/updatePassword";
+import EmailVerification from "./Components/EmailVerification";
 
 
 const App = () => {
@@ -127,6 +128,10 @@ const App = () => {
         {
           path: "/updatePassword",
           element: <UpdatePassword />,
+        },
+        {
+          path: "/verify-email",
+          element: <EmailVerification />,
         },
       ],
     },
