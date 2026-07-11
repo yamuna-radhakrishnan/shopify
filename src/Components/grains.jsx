@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import IconButton from '@mui/material/IconButton';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import FavoriteIcon from '@mui/icons-material/Favorite';
@@ -55,6 +56,7 @@ const Grains = ({ handleClick }) => {
         <p className="product-page-subtitle">
           Nutritious grains sourced directly from farmers — wheat, rice, millet and more.
         </p>
+        <Link to="/consumer" className="back-to-categories-btn">← Back to Categories</Link>
       </header>
 
       <section className="products-grid" aria-label="Grains products" aria-busy={loading}>

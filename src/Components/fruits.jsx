@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import IconButton from '@mui/material/IconButton';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import FavoriteIcon from '@mui/icons-material/Favorite';
@@ -41,6 +42,7 @@ const Fruits = ({ handleClick }) => {
       <header className="product-page-header">
         <h1 className="product-page-title">Fruits</h1>
         <p className="product-page-subtitle">Seasonal fruits — naturally ripened and sourced directly from orchards near you.</p>
+        <Link to="/consumer" className="back-to-categories-btn">← Back to Categories</Link>
       </header>
       <section className="products-grid" aria-label="Fruits products" aria-busy={loading}>
         {loading
