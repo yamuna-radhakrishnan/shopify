@@ -1,28 +1,18 @@
 import React from "react";
 import { Grid, Box, Paper, Typography, Button } from "@mui/material";
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import ListSubheader from '@mui/material/ListSubheader';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
 import { getImgUrl } from './imgHelper';
 import '../Styles/web.css';
 
 const Payment = () => {
   const bill = localStorage.getItem("billAmount");
-  const [paymentMethod, setPaymentMethod] = React.useState('');
-
-  const handleChange = (event) => {
-    setPaymentMethod(event.target.value);
-  };
+  const [selected, setSelected] = React.useState(true);
 
   return (
     <main id="main-content">
       <Grid container component="div" sx={{ minHeight: "100vh" }}>
-        {/* Form panel */}
         <Grid item xs={12} sm={12} md={5} component={Paper} elevation={0}
           sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', p: { xs: 4, md: 6 }, bgcolor: 'var(--bg-page)' }}>
-          <Box sx={{ maxWidth: 400, mx: 'auto', width: '100%' }}>
+          <Box sx={{ maxWidth: 400, mx: 'auto', width: '100%', textAlign: 'center' }}>
             <Typography variant="overline" sx={{ color: 'var(--text-muted)', letterSpacing: 2, fontFamily: "'DM Sans', sans-serif" }}>
               Secure Checkout
             </Typography>
@@ -37,31 +27,39 @@ const Payment = () => {
               ₹{bill}
             </Typography>
 
-            <FormControl fullWidth sx={{ mb: 3 }}>
-              <InputLabel id="payment-method-label">Payment Method</InputLabel>
-              <Select
-                labelId="payment-method-label"
-                id="payment-method-select"
-                value={paymentMethod}
-                label="Payment Method"
-                onChange={handleChange}
-              >
-                <MenuItem value="cod">Cash on Delivery</MenuItem>
-                <ListSubheader>Cards</ListSubheader>
-                <MenuItem value="credit">Credit Card</MenuItem>
-                <MenuItem value="debit">Debit Card</MenuItem>
-                <ListSubheader>UPI</ListSubheader>
-                <MenuItem value="paytm">Paytm</MenuItem>
-                <MenuItem value="gpay">Google Pay</MenuItem>
-                <MenuItem value="phonepe">PhonePe</MenuItem>
-              </Select>
-            </FormControl>
+            <Typography sx={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 600, color: 'var(--text-primary)', mb: 2 }}>
+              Online Payment
+            </Typography>
+
+            <Box
+              onClick={() => setSelected(true)}
+              sx={{
+                border: selected ? '2px solid var(--primary)' : '2px solid var(--border-light)',
+                borderRadius: 3,
+                p: 3,
+                mb: 3,
+                cursor: 'pointer',
+                bgcolor: selected ? 'var(--color-forest-50)' : 'transparent',
+                transition: 'all 0.2s',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                '&:hover': { borderColor: 'var(--primary)', bgcolor: 'var(--color-forest-50)' },
+              }}
+            >
+              <Box
+                component="img"
+                src={getImgUrl('/images/GPAY.jpeg')}
+                alt="Google Pay"
+                sx={{ height: 48, objectFit: 'contain' }}
+              />
+            </Box>
 
             <Button
               id="confirm-button"
               variant="contained"
               size="large"
-              disabled={!paymentMethod}
+              disabled={!selected}
               fullWidth
               sx={{
                 bgcolor: 'var(--primary)',
@@ -76,7 +74,7 @@ const Payment = () => {
                 '&:disabled': { opacity: 0.5 },
               }}
             >
-              Confirm Payment
+              Pay ₹{bill}
             </Button>
             <Typography sx={{ mt: 2, fontSize: '0.75rem', color: 'var(--text-muted)', textAlign: 'center' }}>
               Your payment information is secure and encrypted.
@@ -84,7 +82,6 @@ const Payment = () => {
           </Box>
         </Grid>
 
-        {/* Background image panel */}
         <Grid
           item
           xs={false}
